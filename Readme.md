@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Станислав Базаров](https://up.htmlacademy.ru/htmlcss/33/user/1720461).
-* Наставник: `Михаил Поданев`.
+* Наставник: [Михаил Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
