@@ -5,8 +5,60 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation-logo">
+          <img class="main-navigation-logo" src="#" alt="Логотип магазина мороженого 'Глейси'">
+        </a>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <!-- не совсем уверен, что правильно выбрал тег (который <address>) для телефона -->
+      <!-- или лучше добавить <span> с классом visually-hidden перед тегом <a>? -->
+      <address class="main-phone">
+        <a href="tel:+78005558628" aria-label="Телефон для связи">+7 800 555-86-28</a>
+      </address>
+
+      <!-- я правильно понял, что форма здесь не нужна? Будет кнопка, по нажатию на которую
+      открывается попап с формой поиска? Поэтому я просто добавляю третий элемент в список
+      ниже, а в него тег <span> с классом visually-hidden? -->
+      <!-- <form class="main-search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label>
+          <input class="main-search-form-input" type="text" placeholder="Поиск по сайту">
+        </label>
+      </form> -->
+
+      <nav class="user-navigation">
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item buttom">
+            <a class="user-navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="user-navigation-item buttom">
+            <a class="user-navigation-link" href="#">Вход</a>
+          </li>
+          <li class="user-navigation-item buttom">
+            <a class="user-navigation-link" href="#">Пусто</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
 
   </body>
 </html>
