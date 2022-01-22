@@ -66,8 +66,8 @@
           первый, мы нажимаем и попадаем на другую часть сайта, где можно добавить
           в корзину конкретно это мороженое, тогда это ССЫЛКА, второй путь, мы нажимаем
           и, например, открывается окошко выбора количества или подтвержения, или, например,
-          товар сразу добавляется в корзину, тогда это КНОПКА. Я выбрал кнопку.-->
-        <button class="button" type="button">Заказать</button>
+          товар сразу добавляется в корзину, тогда это КНОПКА. Я выбрал ссылку.-->
+        <a class="features-link button" href="#">Заказать</a>
         <!-- список фото упорядоченный или неупорядоченный? -->
 
         <ol class="features-slider-list">
@@ -126,6 +126,91 @@
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
+        </ul>
+      </section>
+
+      <section class="promo">
+        <h2 class="visually-hidden">Наши промоакции</h2>
+        <p class="promo-title">Заказывайте мороженое<br> и получайте подарки!</p>
+        <ul class="promo-list">
+          <li class="promo-item">
+            <h3 class="promo-item-title">Малинка даром!</h3>
+            <p class="promo-item-subtitle">При покупке 2 кг любого фруктового<br>мороженого добавим в ваш заказ банку<br>малинового варенья бесплатно.</p>
+            <a class="promo-item-link button" href="#">Хочу подарок</a>
+          </li>
+          <li class="promo-item">
+            <h3 class="promo-item-title">Маршмеллоу даром!</h3>
+            <p class="promo-item-subtitle">При покупке 2 кг пломбира добавим<br>в ваш заказ упаковку нежных<br>зефирок совершенно бесплатно.</p>
+            <a class="promo-item-link button" href="#">Хочу подарок</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="proposals">
+        <h2 class="visually-hidden">Наши предложения</h2>
+        <p class="proposals-title">Попробуйте самые популярные<br>вкусы нашего мороженого</p>
+        <ul class="proposals-list">
+          <li class="proposals-item">
+            <p class="proposals-item-title">Малинка</p>
+            <p class="proposals-item-subtitle">Сливочное мороженое<br>с малиновым джемом</p>
+            <b class="proposals-price">
+              <!-- здесь по идее в дальнейшем планируется замена символа рубля на svg-графику? Пока что
+                вставил обычным текстом-->
+              <!-- <svg></svg> -->
+              310 ₽
+              <!-- здесь я заметил, что размер шрифта цены и указателя меры различаются
+                в размерах, поэтому решил добавить <span> для раздельного указания
+                стилей в будущем -->
+              <span class="proposals-measure">/кг</span>
+            </b>
+            <button class="proposals-button" type="button">
+              <span class="vissualy-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+          <li class="proposals-item">
+            <p class="proposals-item-title">Фисташка</p>
+            <p class="proposals-item-subtitle">Фисташковый пломбир<br>с кусочками шоколада</p>
+            <b class="proposals-price">
+              340 ₽
+              <span class="proposals-measure">/кг</span>
+            </b>
+            <button class="proposals-button" type="button">
+              <span class="vissualy-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+          <li class="proposals-item">
+            <p class="proposals-item-title">Черника</p>
+            <p class="proposals-item-subtitle">Крем-брюле<br>с черничным джемом</p>
+            <b class="proposals-price">
+              330 ₽
+              <span class="proposals-measure">/кг</span>
+            </b>
+            <button class="proposals-button" type="button">
+              <span class="vissualy-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+          <li class="proposals-item">
+            <p class="proposals-item-title">Бабл-гам</p>
+            <p class="proposals-item-subtitle">Ванильный пломбир<br>со сладкой посыпкой</p>
+            <b class="proposals-price">
+              320 ₽
+              <span class="proposals-measure">/кг</span>
+            </b>
+            <button class="proposals-button" type="button">
+              <span class="vissualy-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже<br>мороженого собственного производства на развес</p>
+        <ul class="advantages-list">
+          <li class="advantages-item">Всё наше мороженое изготавливается на собственном<br>производстве с использованием современного<br>оборудования и проверенных временем технологий.</li>
+          <li class="advantages-item">Для приготовления мороженого используются сливки<br>и молоко высочайшего качества. Все ингредиенты<br>и добавки произведены из натурального сырья.</li>
+          <li class="advantages-item">Закупка ингредиентов производится только<br>у проверенных фермерских хозяйств, с которыми<br>нас связывает долговременное сотрудничество.</li>
+          <li class="advantages-item">Доставка нашего мороженого осуществляется в<br>специальном термопаке, который не даёт мороженому<br>растаять и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
 
