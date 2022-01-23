@@ -61,15 +61,15 @@
       <section class="features">
         <h2 class="visually-hidden">Наше мороженое</h2>
         <p class="features-title">Нежный пломбир<br>с клубничным джемом</p>
-        <p class="features-subtitle">Натуральное мороженое из свежих сливок<br>и молока с вкуснейшим клубничным джемом<br>– это идеальный десерт для всей семьи.</p>
+        <p class="features-text">Натуральное мороженое из свежих сливок<br>и молока с вкуснейшим клубничным джемом<br>– это идеальный десерт для всей семьи.</p>
         <!-- вот здесь непонятно, будет кнопка или ссылка? Т.е. по логике есть два пути:
           первый, мы нажимаем и попадаем на другую часть сайта, где можно добавить
           в корзину конкретно это мороженое, тогда это ССЫЛКА, второй путь, мы нажимаем
           и, например, открывается окошко выбора количества или подтвержения, или, например,
           товар сразу добавляется в корзину, тогда это КНОПКА. Я выбрал ссылку.-->
         <a class="features-link button" href="#">Заказать</a>
-        <!-- список фото упорядоченный или неупорядоченный? -->
 
+        <!-- список фото упорядоченный или неупорядоченный? Я выбрал <ol> -->
         <ol class="features-slider-list">
           <li class="features-slider-item slider-item-current">
             <img class="features-slider-image" src="#" width="" height="" alt="Пломбир с клубничным джемом.">
@@ -89,6 +89,7 @@
           <span class="visually-hidden">Следующее фото</span>
         </button>
 
+        <!-- или правильнее было назвать "Фото пломбира с клубничным джемом" и т.д.? -->
         <ol class="features-slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
@@ -135,12 +136,12 @@
         <ul class="promo-list">
           <li class="promo-item">
             <h3 class="promo-item-title">Малинка даром!</h3>
-            <p class="promo-item-subtitle">При покупке 2 кг любого фруктового<br>мороженого добавим в ваш заказ банку<br>малинового варенья бесплатно.</p>
+            <p class="promo-item-text">При покупке 2 кг любого фруктового<br>мороженого добавим в ваш заказ банку<br>малинового варенья бесплатно.</p>
             <a class="promo-item-link button" href="#">Хочу подарок</a>
           </li>
           <li class="promo-item">
             <h3 class="promo-item-title">Маршмеллоу даром!</h3>
-            <p class="promo-item-subtitle">При покупке 2 кг пломбира добавим<br>в ваш заказ упаковку нежных<br>зефирок совершенно бесплатно.</p>
+            <p class="promo-item-text">При покупке 2 кг пломбира добавим<br>в ваш заказ упаковку нежных<br>зефирок совершенно бесплатно.</p>
             <a class="promo-item-link button" href="#">Хочу подарок</a>
           </li>
         </ul>
@@ -152,6 +153,8 @@
         <ul class="proposals-list">
           <li class="proposals-item">
             <p class="proposals-item-title">Малинка</p>
+            <!-- решил назвать этот и следующие параграфы как subtitle, подскажи, если назвать его как text,
+              это тоже нормально будет? -->
             <p class="proposals-item-subtitle">Сливочное мороженое<br>с малиновым джемом</p>
             <b class="proposals-price">
               <!-- здесь по идее в дальнейшем планируется замена символа рубля на svg-графику? Пока что
@@ -197,7 +200,7 @@
               <span class="proposals-measure">/кг</span>
             </b>
             <button class="proposals-button" type="button">
-              <span class="vissualy-hidden">Добавить в корзину</span>
+              <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
         </ul>
@@ -225,10 +228,31 @@
         <p class="subscription-title">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>в курсе всего самого вкусного, что у нас происходит. Обещаем<br>не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="subscription-form-container">
+            <!-- Я решил скрыть label, т.к. в верстке его нет, но нужно как-то обеспечить доступность -->
             <label class="visually-hidden" for="subscription-field">Email</label>
-            <input type="email" placeholder="email@example.com" name="subscription-email" id="subscription-field">
+            <input type="email" name="subscription-email" placeholder="email@example.com" id="subscription-field">
           </p>
-          <button class="button subscription-button" type="button">Отправить</button>
+          <button class="button subscription-form-button" type="button">Отправить</button>
+        </form>
+      </section>
+
+      <section class="delivery">
+        <h2 class="visually-hidden">Доставка</h2>
+        <p class="delivery-title">Доставка любимого<br>мороженого на дом</p>
+        <p class="delivery-text">Хочется полакомиться любимым дессертом,<br>но нет времени съездить в магазин? Закажите<br>доставку мороженого на дом, и курьер<br>привезёт вам ваш заказ в течение часа!</p>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
+          <label>Дата
+            <input type="text" name="delivery-form-date" placeholder="01.04.2020">
+          </label>
+          <label>Телефон
+            <input type="tel" name="delivery-form-phone" placeholder="+7 800 999-00-00">
+          </label>
+          <label>Адрес
+            <!-- добавил атрибут size, адрес не умещался) -->
+            <input type="text" name="delivery-form-address" placeholder="ул.Большая Конюшенная, 19/8" size="30">
+          </label>
+          <button class="button delivery-form-button" type="button">Отправить</button>
         </form>
       </section>
 
