@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1720461-gllacy-33/3/">
+</head>
+  <body>
+    <header class="main-header">
+      <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
+      <nav class="main-navigation">
+        <a class="main-navigation-logo">
+          <img class="main-navigation-logo" src="#" alt="Логотип магазина мороженого 'Глейси'.">
+          <!-- вопрос по поводу кавычек, если нужны двойные, то как тогда быть? -->
+        </a>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- не совсем уверен, что правильно выбрал тег (который <address>) для телефона -->
+      <!-- или лучше добавить <span> с классом visually-hidden перед тегом <a>? -->
+      <address class="main-phone">
+        <a href="tel:+78005558628" aria-label="Телефон для связи.">+7 800 555-86-28</a>
+      </address>
+
+      <!-- я правильно понял, что форма здесь не нужна? Будет кнопка, по нажатию на которую
+        открывается попап с формой поиска? Поэтому я просто добавляю третий элемент в список
+        ниже, а в него тег <span> с классом visually-hidden? -->
+      <!-- <form class="main-search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label>
+          <input class="main-search-form-input" type="text" placeholder="Поиск по сайту">
+        </label>
+      </form> -->
+
+      <nav class="user-navigation">
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item button button-nav">
+            <a class="user-navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="user-navigation-item button button-nav">
+            <a class="user-navigation-link" href="#">Вход</a>
+          </li>
+          <li class="user-navigation-item button button-nav">
+            <a class="user-navigation-link" href="#">Пусто</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-index">
+      <section class="features">
+        <h2 class="visually-hidden">Наше мороженое</h2>
+        <p class="features-title">Нежный пломбир<br>с клубничным джемом</p>
+        <p class="features-text">Натуральное мороженое из свежих сливок<br>и молока с вкуснейшим клубничным джемом<br>– это идеальный десерт для всей семьи.</p>
+        <!-- вот здесь непонятно, будет кнопка или ссылка? Т.е. по логике есть два пути:
+          первый, мы нажимаем и попадаем на другую часть сайта, где можно добавить
+          в корзину конкретно это мороженое, тогда это ССЫЛКА, второй путь, мы нажимаем
+          и, например, открывается окошко выбора количества или подтвержения, или, например,
+          товар сразу добавляется в корзину, тогда это КНОПКА. Я выбрал ссылку.-->
+        <a class="features-link button button-features" href="#">Заказать</a>
+
+        <!-- список фото упорядоченный или неупорядоченный? Я выбрал <ol> -->
+        <ol class="features-slider-list">
+          <li class="features-slider-item slider-item-current">
+            <img class="features-slider-image" src="#" alt="Пломбир с клубничным джемом.">
+          </li>
+          <li class="features-slider-item">
+            <img class="features-slider-image" src="#" alt="Сливочное морожение со вкусом банана.">
+          </li>
+          <li class="features-slider-item">
+            <img class="features-slider-image" src="#" alt="Карамельный пломбир с маршмеллоу.">
+          </li>
+        </ol>
+
+        <button class="features-slider-button button-slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="features-slider-button button-slider-prev" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+
+        <!-- или правильнее было назвать "Фото пломбира с клубничным джемом" и т.д.? -->
+        <ol class="features-slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">Первое фото мороженого</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">Второе фото мороженого</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">Третье фото мороженого</span>
+            </button>
+          </li>
+        </ol>
+      </section>
+
+      <section class="social">
+        <h2 class="visually-hidden">Подписка на социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="promo">
+        <h2 class="visually-hidden">Наши промоакции</h2>
+        <p class="promo-title">Заказывайте мороженое<br> и получайте подарки!</p>
+        <ul class="promo-list">
+          <li class="promo-item">
+            <h3 class="promo-item-title">Малинка даром!</h3>
+            <p class="promo-item-text">При покупке 2 кг любого фруктового<br>мороженого добавим в ваш заказ банку<br>малинового варенья бесплатно.</p>
+            <a class="promo-item-link button button-promo" href="#">Хочу подарок</a>
+          </li>
+          <li class="promo-item">
+            <h3 class="promo-item-title">Маршмеллоу даром!</h3>
+            <p class="promo-item-text">При покупке 2 кг пломбира добавим<br>в ваш заказ упаковку нежных<br>зефирок совершенно бесплатно.</p>
+            <a class="promo-item-link button button-promo" href="#">Хочу подарок</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="proposals">
+        <h2 class="visually-hidden">Наши предложения</h2>
+        <p class="proposals-title">Попробуйте самые популярные<br>вкусы нашего мороженого</p>
+        <ul class="proposals-list">
+          <li class="proposals-item">
+              <!-- решил использовать тег <h3>, подскажи, пожалуйста, если использовать <p>,
+              это тоже нормально будет? -->
+            <h3 class="proposals-item-title">Малинка</h3>
+            <p class="proposals-item-text">Сливочное мороженое<br>с малиновым джемом</p>
+            <b class="proposals-price">
+              <!-- здесь по идее в дальнейшем планируется замена символа рубля на svg-графику? Пока что
+                вставил обычным текстом-->
+              <!-- <svg></svg> -->
+              310 ₽
+              <!-- здесь я заметил, что размер шрифта цены и указателя меры различаются
+                в размерах, поэтому решил добавить <span> для раздельного указания
+                стилей в будущем -->
+              <span class="proposals-measure">/кг</span>
+            </b>
+            <button class="proposals-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+          <li class="proposals-item">
+            <h3 class="proposals-item-title">Фисташка</h3>
+            <p class="proposals-item-text">Фисташковый пломбир<br>с кусочками шоколада</p>
+            <b class="proposals-price">
+              340 ₽
+              <span class="proposals-measure">/кг</span>
+            </b>
+            <button class="proposals-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+          <li class="proposals-item">
+            <h3 class="proposals-item-title">Черника</h3>
+            <p class="proposals-item-text">Крем-брюле<br>с черничным джемом</p>
+            <b class="proposals-price">
+              330 ₽
+              <span class="proposals-measure">/кг</span>
+            </b>
+            <button class="proposals-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+          <li class="proposals-item">
+            <h3 class="proposals-item-title">Бабл-гам</h3>
+            <p class="proposals-item-text">Ванильный пломбир<br>со сладкой посыпкой</p>
+            <b class="proposals-price">
+              320 ₽
+              <span class="proposals-measure">/кг</span>
+            </b>
+            <button class="proposals-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже<br>мороженого собственного производства на развес</p>
+        <ul class="advantages-list">
+          <li class="advantages-item">Всё наше мороженое изготавливается на собственном<br>производстве с использованием современного<br>оборудования и проверенных временем технологий.</li>
+          <li class="advantages-item">Для приготовления мороженого используются сливки<br>и молоко высочайшего качества. Все ингредиенты<br>и добавки произведены из натурального сырья.</li>
+          <li class="advantages-item">Закупка ингредиентов производится только<br>у проверенных фермерских хозяйств, с которыми<br>нас связывает долговременное сотрудничество.</li>
+          <li class="advantages-item">Доставка нашего мороженого осуществляется в<br>специальном термопаке, который не даёт мороженому<br>растаять и позволяет сохранить превосходный вкус.</li>
+        </ul>
+      </section>
+
+      <article class="blog">
+        <h2 class="visually-hidden">Наш блог</h2>
+        <p class="blog-title">Новое в нашем блоге</p>
+        <a class="blog-link" href="#">10 способов сервировки<br>фруктовых щербетов<br>к столу</a>
+      </article>
+
+      <section class="subscription">
+        <h2 class="visually-hidden">Оформление подписки</h2>
+        <p class="subscription-title">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>в курсе всего самого вкусного, что у нас происходит. Обещаем<br>не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="subscription-form-container">
+            <!-- я решил скрыть label, т.к. в верстке его нет, но нужно как-то обеспечить доступность -->
+            <label class="visually-hidden" for="subscription-field">Email</label>
+            <input type="email" name="subscription-email" placeholder="email@example.com" id="subscription-field">
+          </p>
+          <button class="subscription-form-button button" type="button">Отправить</button>
+        </form>
+      </section>
+
+      <section class="delivery">
+        <h2 class="visually-hidden">Доставка</h2>
+        <p class="delivery-title">Доставка любимого<br>мороженого на дом</p>
+        <p class="delivery-text">Хочется полакомиться любимым дессертом,<br>но нет времени съездить в магазин? Закажите<br>доставку мороженого на дом, и курьер<br>привезёт вам ваш заказ в течение часа!</p>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
+          <label>Дата
+            <input type="text" name="delivery-form-date" placeholder="01.04.2020">
+          </label>
+          <label>Телефон
+            <input type="tel" name="delivery-form-phone" placeholder="+7 800 999-00-00">
+          </label>
+          <label>Адрес
+            <!-- добавил атрибут size, адрес не умещался) -->
+            <input type="text" name="delivery-form-address" placeholder="ул.Большая Конюшенная, 19/8" size="30">
+          </label>
+          <button class="delivery-form-button button button-delivery" type="button">Отправить</button>
+        </form>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts-title">Адрес главного офиса<br>и офлайн-магазина:</p>
+        <address class="contacts-address">
+          <!-- здесь редактор кода ругнулся на какой-то неподдерживаеммый им символ (перед цифрой 5),
+            при копировании с фигмы, я его удалил, может быть ты знаешь что-нибудь про это?-->
+          <p class="contacts-address-text">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</p>
+        </address>
+        <p class="contacts-subtitle">Для заказов по телефону:</p>
+        <address class="contacts-address">
+          <!-- странно, но похоже, что номер телефона не кликабельный. Использовал <a> без href -->
+            <a class="contacts-address-tel">+7 (812) 812-12-12</a>
+        </address>
+        <!-- почему-то сюда хочется вставить <span> вместо <p>, это имеет смысл? -->
+        <p class="working-hours">(с 10 до 20 ежедневно)</p>
+        <button class="contact-form-button button button-contacts" type="button">Форма обратной связи</button>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Подписка на социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-about-us">
+        <h2 class="visually-hidden">О нас</h2>
+        <ul class="footer-about-us-list">
+          <li class="footer-about-us-item footer-item-current">
+            <a class="footer-about-us-link" href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-about-us-item">
+            <a class="footer-about-us-link" href="#">О производстве</a>
+          </li>
+          <li class="footer-about-us-item">
+            <a class="footer-about-us-link" href="#">Наши документы</a>
+          </li>
+          <li class="footer-about-us-item">
+            <a class="footer-about-us-link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-copyright">
+        <h2 class="visually-hidden">Копирайт</h2>
+        <!-- что-то я не понимаю каким классом обозвать этот <span>? -->
+        <span class="footer-copyright-text-style">.html<br>academy</span>
+        <p class="footer-copyright-text">
+          <!-- и этот <span> тоже -->
+          Сделано в <span class="footer-copyright-span-link"><a class="footer-copyright-link" href="https://htmlacademy.ru/">.html academy</a></span> &copy; 2021
+        </p>
+      </section>
+
+    </footer>
+  </body>
+</html>
