@@ -113,17 +113,17 @@
         <h2 class="visually-hidden">Подписка на социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#">
+            <a class="social-link" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
@@ -228,7 +228,7 @@
         <p class="subscription-title">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>в курсе всего самого вкусного, что у нас происходит. Обещаем<br>не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="subscription-form-container">
-            <!-- Я решил скрыть label, т.к. в верстке его нет, но нужно как-то обеспечить доступность -->
+            <!-- я решил скрыть label, т.к. в верстке его нет, но нужно как-то обеспечить доступность -->
             <label class="visually-hidden" for="subscription-field">Email</label>
             <input type="email" name="subscription-email" placeholder="email@example.com" id="subscription-field">
           </p>
@@ -256,7 +256,72 @@
         </form>
       </section>
 
+      <section class="contacts">
+        <p class="contacts-title">Адрес главного офиса<br>и офлайн-магазина:</p>
+        <address class="contacts-address">
+          <!-- здесь редактор кода ругнулся на какой-то неподдерживаеммый им символ (перед цифрой 5),
+            при копировании с фигмы, я его удалил, может быть ты знаешь что-нибудь про это?-->
+          <p class="contacts-address-text">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</p>
+        </address>
+        <p class="contacts-subtitle">Для заказов по телефону:</p>
+        <address class="contacts-address">
+          <!-- странно, но похоже, что номер телефона не кликабельный. Использовал <a> без href -->
+            <a class="contacts-address-tel">+7 (812) 812-12-12</a>
+        </address>
+        <!-- почему-то сюда хочется вставить <span> вместо <p>, это имеет смысл? -->
+        <p class="working-hours">(с 10 до 20 ежедневно)</p>
+        <button class="button contact-form-button" type="button">Форма обратной связи</button>
+      </section>
 
+      <footer class="main-footer">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Подписка на социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link" href="https://www.instagram.com/htmlacademy/">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-about-us">
+          <h2 class="visually-hidden">О нас</h2>
+          <ul class="footer-about-us-list">
+            <li class="footer-about-us-item footer-item-current">
+              <a class="footer-about-us-link" href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-about-us-item">
+              <a class="footer-about-us-link" href="#">О производстве</a>
+            </li>
+            <li class="footer-about-us-item">
+              <a class="footer-about-us-link" href="#">Наши документы</a>
+            </li>
+            <li class="footer-about-us-item">
+              <a class="footer-about-us-link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-copyright">
+          <h2 class="visually-hidden">Копирайт</h2>
+          <span>.html<br>academy</span>
+          <p class="footer-copyright-text">
+            <!-- что-то я не понимаю каким классом обозвать этот <span>? -->
+            Сделано в <span class="footer-copyright-span-link"><a class="footer-copyright-link" href="https://htmlacademy.ru/">.html academy</a></span> &copy; 2021
+          </p>
+        </section>
+      </footer>
     </main>
   </body>
 </html>
