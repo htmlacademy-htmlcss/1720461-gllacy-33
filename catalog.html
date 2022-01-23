@@ -66,7 +66,7 @@
       </header>
 
       <section class="catalog-filter">
-        <h2 class="visually-hidden">Фильтры каталога мороженого</h2>
+        <h2 class="visually-hidden">Фильтр каталога мороженого</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Сортировка:</legend>
@@ -82,6 +82,7 @@
             <!-- как я понял, input range с двумя ползунками сделать стандартными средствами
             html нельзя, поэтому я, пока что, пропустил эту часть-->
           </fieldset>
+
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-list">
@@ -133,6 +134,184 @@
 
           <button class="catalog-filter-button button button-filter" type="submit">Применить</button>
         </form>
+      </section>
+
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Список каталога мороженого</h2>
+        <ul class="catalog-products-list">
+          <!-- фото товаров это контентные картинки, однако в данном конкретном случае я в этом
+            не уверен. Мне кажется мы ничего не потеряем, если не будем видеть фото мороженого
+            и сможем спокойно его заказать по описанию, поэтому считаю, что эти изображения
+            декоративные и их нужно добавить с помощью CSS-->
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Малинка</h3>
+              <p class="product-card-text">Сливочное мороженое<br>с малиновым джемом</p>
+            </a>
+              <b class="product-card-price">
+                310 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Фисташка</h3>
+              <p class="product-card-text">Фисташковый пломбир<br> с кусочками шоколада</p>
+            </a>
+              <b class="product-card-price">
+                340 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Черника</h3>
+              <p class="product-card-text">Крем-брюле<br>с черничным джемом</p>
+            </a>
+              <b class="product-card-price">
+                330 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Бабл-гам</h3>
+              <p class="product-card-text">Ванильный пломбир<br>со сладкой посыпкой</p>
+            </a>
+              <b class="product-card-price">
+                320 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Ежевика</h3>
+              <p class="product-card-text">Сливочное мороженое<br>с ежевичным джемом</p>
+            </a>
+              <b class="product-card-price">
+                330 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Банан</h3>
+              <p class="product-card-text">Сливочный пломбир<br>с банановым вкусом</p>
+            </a>
+              <b class="product-card-price">
+                340 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Шоколадка</h3>
+              <p class="product-card-text">Классический<br>шоколадный пломбир</p>
+            </a>
+              <b class="product-card-price">
+                270 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Клубничка</h3>
+              <p class="product-card-text">Сливочный пломбир<br>с клубничным вкусом</p>
+            </a>
+              <b class="product-card-price">
+                300 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Лимон</h3>
+              <p class="product-card-text">Освежающий<br>лимонный сорбет</p>
+            </a>
+              <b class="product-card-price">
+                310 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Ментол</h3>
+              <p class="product-card-text">Сливочный пломбир<br>с ментоловым сиропом</p>
+            </a>
+              <b class="product-card-price">
+                320 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Орешек</h3>
+              <p class="product-card-text">Фисташковый пломбир<br>с шоколадным сиропом</p>
+            </a>
+              <b class="product-card-price">
+                360 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card-link" href="#">
+              <h3 class="product-card-title">Крем-брюле</h3>
+              <p class="product-card-text">Классическое<br>крем-брюле </p>
+            </a>
+              <b class="product-card-price">
+                280 ₽
+                <span class="product-card-measure">/кг</span>
+              </b>
+            <button class="product-card-button button-add-to-cart" type="button">
+              <span class="visually-hidden">Добавить в корзину</span>
+            </button>
+          </li>
+        </ul>
       </section>
     </main>
 
