@@ -240,3 +240,31 @@ li {
   text-decoration: underline;
 }
 
+
+/* стили для catalog.html */
+/* хлебные крошки */
+.catalog-breadcrumbs-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.breadcrumbs-link-current {
+  text-decoration: none;
+}
+
+
+/* фильтр */
+.catalog-filter {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+/* каталог товаров */
+.product-card-title, .product-card-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
