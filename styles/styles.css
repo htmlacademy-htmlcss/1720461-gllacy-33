@@ -1,0 +1,242 @@
+/* шрифты */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+
+/* общие стили */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d3440;
+  background-color: #feafc3;
+}
+/* В одном критерии говорится, что нельзя использовать селектор
+по тегу (только для <body> и еще в паре случаев). Могу ли я
+использовать его так, как написал ниже, или все-таки нужно
+прописывать всем <li> класс и делать селектор по этому классу?
+Смогу ли я будущем добавить стилизации <li> или нужно использовать
+селектор по классу? */
+li {
+  list-style-type: none;
+}
+.link {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: inherit;
+  text-decoration: none;
+}
+.title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+.yellow-bg {
+  background-color: #fcc850;
+}
+.blue-bg {
+  background-color: #69a9ff;
+}
+.rose-bg {
+  background-color: #feafc3;
+}
+
+
+/* шапка */
+.main-navigation-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.main-phone-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.user-navigation-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+/* особенности */
+.features-title {
+  font-size: 36px;
+}
+.features-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+.features-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+
+/* акции */
+.promo-title {
+  text-align: center;
+}
+.promo-item-one {
+  background-color: #ff7799;
+  background-image: url("../images/products/cone-of-raspberry.png");
+/* не совсем понял, как задать размеры декоративного изображения
+что бы оно было не фиксированным, а адаптивным, а также не тянулось
+на всю длину, а имело свои собственные пропорции?*/
+  background-repeat: no-repeat;
+}
+.promo-item-two {
+  background-color: #ff7799;
+  background-image: url("../images/products/cone-of-marshmallows.png");
+  /* а также интересует как мы потом разместим декоративное изображение
+  слева? С помощью position relative в родителе и position absolute в div? */
+  background-repeat: no-repeat;
+}
+.promo-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.promo-item-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+
+/* предложения */
+.proposals-title {
+  text-align: center;
+}
+.proposals-article {
+  background-color: #fcfcfc;
+}
+.proposals-item-title, .proposals-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+
+/* преимущества */
+.advantages {
+  background-color: #fcfcfc;
+  background-image: url("../images/backgrounds/wafer-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.advantages-container {
+  background-color: #fcfcfc;
+}
+.advantages-title {
+  text-align: center;
+}
+
+
+/* блог */
+.blog {
+  background-color: #ffffff;
+  background-image: url("../images/backgrounds/sorbet-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.blog-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.blog-link {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+
+/* подписка */
+.subscription {
+  background-color: #fcfcfc;
+  background-image: url("../images/backgrounds/postal-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.subscription-container {
+  background-color: #fcfcfc;
+}
+
+
+/* доставка */
+.delivery {
+  background-color: #fcfcfc;
+  background-image: url("../images/backgrounds/ice-cream-background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.delivery-form {
+  background-color: #fcfcfc;
+}
+
+
+/* контакты */
+.contacts {
+  background-color: #fcfcfc;
+  background-image: url("../images/backgrounds/ice-cream-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.contacts-address-text, .contacts-address-tel {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.working-hours {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+/* подвал */
+.footer-about-us-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.footer-selected-link {
+  font-weight: 700;
+}
+.footer-copyright-text, .footer-copyright-link {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.footer-copyright-link {
+  text-decoration: underline;
+}
+
