@@ -96,12 +96,11 @@ body {
 }
 .navigation-flex-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .flex-container {
   display: flex;
 }
-
 
 
 /* особенности */
