@@ -127,29 +127,31 @@
 
       <section class="social">
         <h2 class="visually-hidden" hidden>Наши социальные сети</h2>
-        <ul class="social-list list">
-          <li class="social-item item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social-item item">
-            <a class="social-link" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="social-item item">
-            <a class="social-link" href="https://www.instagram.com/htmlacademy/">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="social-list list flex-container">
+            <li class="social-item item">
+              <a class="social-link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social-item item">
+              <a class="social-link" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social-item item">
+              <a class="social-link" href="https://www.instagram.com/htmlacademy/">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="promo">
         <h2 class="promo-title title">Заказывайте мороженое  и получайте подарки!</h2>
         <div class="promo-container">
-          <ul class="promo-list list">
+          <ul class="promo-list list flex-container">
             <li class="promo-item item">
               <div class="promo-item-one">
                 <h3 class="promo-item-title">Малинка даром!</h3>
@@ -171,7 +173,7 @@
       <section class="proposals">
         <div class="proposals-container">
           <h2 class="proposals-title title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-          <ul class="proposals-list list">
+          <ul class="proposals-list list flex-container">
             <li class="proposals-item item">
               <article class="proposals-article">
                 <a class="proposals-link link" href="#">
@@ -243,12 +245,18 @@
       <section class="advantages">
         <div class="advantages-container">
           <h2 class="advantages-title title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-          <ul class="advantages-list list">
-            <li class="advantages-item item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
-            <li class="advantages-item item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
-            <li class="advantages-item item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
-            <li class="advantages-item item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
-          </ul>
+          <div class="advantages-list-container">
+            <ul class="advantages-list list flex-container">
+              <div class="advantages-left-column">
+                <li class="advantages-item advantages-item-one item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
+                <li class="advantages-item advantages-item-two item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
+              </div>
+              <div class="advantages-right-column">
+                <li class="advantages-item advantages-item-three item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+                <li class="advantages-item advantages-item-four item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
+              </div>
+            </ul>
+          </div>
         </div>
       </section>
 

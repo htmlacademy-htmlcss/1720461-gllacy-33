@@ -42,6 +42,9 @@ body {
 .main-container {
   flex-grow: 1;
 }
+.flex-container {
+  display: flex;
+}
 .global-layout {
   width: 1170px;
   margin: 0 auto;
@@ -98,9 +101,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.flex-container {
-  display: flex;
-}
 
 
 /* особенности */
@@ -118,24 +118,37 @@ body {
 }
 
 
+/* социальные сети */
+.social-list {
+/* здесь указал текущюю длину элемента, когда здесь останутся только иконки
+я этот размер актуализирую */
+  width: 230px;
+  margin-left: auto;
+}
+
+
 /* акции */
 .promo-title {
   text-align: center;
 }
+.promo-list {
+  justify-content: space-between;
+}
 .promo-item-one {
+  width: 570px;
   background-color: #ff7799;
   background-image: url("../images/products/cone-of-raspberry.png");
-/* не совсем понял, как задать размеры декоративного изображения
-что бы оно было не фиксированным, а адаптивным, а также не тянулось
-на всю длину, а имело свои собственные пропорции?*/
   background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
 }
 .promo-item-two {
+  width: 570px;
   background-color: #ff7799;
   background-image: url("../images/products/cone-of-marshmallows.png");
-  /* а также интересует как мы потом разместим декоративное изображение
-  слева? С помощью position relative в родителе и position absolute в div? */
   background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
 }
 .promo-item-title {
   font-size: 24px;
@@ -152,6 +165,12 @@ body {
 /* предложения */
 .proposals-title {
   text-align: center;
+}
+.proposals-list {
+  justify-content: space-between;
+}
+.proposals-item {
+  width: 270px;
 }
 .proposals-article {
   background-color: #fcfcfc;
@@ -172,9 +191,21 @@ body {
 }
 .advantages-container {
   background-color: #fcfcfc;
+  width: 1122px;
+  margin: auto;
 }
 .advantages-title {
   text-align: center;
+}
+.advantages-list-container {
+/* почему нижний margin не работает? */
+margin: 56px 40px 56px 40px;
+}
+.advantages-item {
+  margin-left: 16px;
+}
+.advantages-item-one, .advantages-item-two {
+  margin-right: 32px;
 }
 
 
