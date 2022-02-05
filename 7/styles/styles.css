@@ -1,0 +1,497 @@
+/* шрифты */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
+
+/* общие стили */
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2d3440;
+  background-color: #feafc3;
+}
+.main-container {
+  flex-grow: 1;
+}
+.flex-container {
+  display: flex;
+}
+.global-layout {
+  width: 1170px;
+  margin: 0 auto;
+}
+.list {
+  margin: 0;
+  padding: 0;
+}
+.item {
+  list-style-type: none;
+}
+.link {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: inherit;
+  text-decoration: none;
+
+}
+.title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+.yellow-bg {
+  background-color: #fcc850;
+}
+.blue-bg {
+  background-color: #69a9ff;
+}
+.rose-bg {
+  background-color: #feafc3;
+}
+
+
+/* шапка */
+.main-header {
+  height: 104px;
+}
+.main-navigation-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.main-phone-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.user-navigation-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.navigation-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* особенности */
+.features {
+  min-height: 554px;
+}
+.features-slider-item {
+  width: 873px;
+  position: relative;
+}
+.features-title {
+  font-size: 36px;
+}
+.features-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+.features-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+/* почему-то у меня не получилось вставить изображение через background-image
+и соответственно я не могу изменить размеры изображения */
+.slide-one::before {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-2.png");
+  position: absolute;
+  left: 946px;
+  top: 202px;
+}
+/* пробовал уменьшить повторные стили (создал классы .slide::before И .slide::after
+и поместил туда position, left, top) но не получилось, псевдоэлементы появились, но
+почему-то не позиционировались */
+.slide-one::after {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-3.png");
+  position: absolute;
+  left: 1087px;
+  top: 202px;
+}
+.slide-two::before {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-3.png");
+  position: absolute;
+  left: 946px;
+  top: 202px;
+}
+.slide-two::after {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-1.png");
+  position: absolute;
+  left: 1087px;
+  top: 202px;
+}
+.slide-three::before {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-1.png");
+  position: absolute;
+  left: 946px;
+  top: 202px;
+}
+.slide-three::after {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-2.png");
+  position: absolute;
+  left: 1087px;
+  top: 202px;
+}
+
+
+/* социальные сети */
+.social-list {
+/* здесь указал текущюю длину элемента, когда здесь останутся только иконки
+я этот размер актуализирую */
+  width: 230px;
+  margin-left: auto;
+}
+
+
+/* акции */
+.promo-title {
+  text-align: center;
+}
+.promo-list {
+  justify-content: space-between;
+}
+.promo-item-one {
+  width: 570px;
+  min-height: 268px;
+  background-color: #ff7799;
+  background-image: url("../images/products/cone-of-raspberry.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+}
+.promo-item-two {
+  width: 570px;
+  min-height: 268px;
+  background-color: #ff7799;
+  background-image: url("../images/products/cone-of-marshmallows.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+}
+.promo-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.promo-item-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+
+/* предложения */
+.proposals-title {
+  text-align: center;
+}
+.proposals-list {
+  justify-content: space-between;
+}
+.proposals-item {
+  width: 270px;
+  min-height: 281px;
+}
+.proposals-article {
+  background-color: #fcfcfc;
+}
+.proposals-article-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.proposals-item-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.proposals-item-text {
+  text-align: center;
+}
+.proposals-item-title, .proposals-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+
+/* преимущества */
+.advantages {
+  min-height: 480px;
+  background-color: #fcfcfc;
+  background-image: url("../images/backgrounds/wafer-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.advantages-container {
+  width: 1122px;
+  min-height: 432px;
+  background-color: #fcfcfc;
+  margin: auto;
+}
+.advantages-title {
+  text-align: center;
+}
+.advantages-list-container {
+/* почему нижний margin не работает? */
+margin: 56px 40px 56px 40px;
+}
+.advantages-list {
+  flex-wrap: wrap;
+}
+.advantages-item {
+  width: 442px;
+  margin-left: 16px;
+}
+.advantages-item-one, .advantages-item-two {
+  margin-right: 32px;
+}
+.advantages-item-one, .advantages-item-two {
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+.advantages-item-three, .advantages-item-four {
+  margin-bottom: 56px;
+}
+
+
+/* блог */
+.blog {
+  width: 570px;
+  min-height: 220px;
+  background-color: #ffffff;
+  background-image: url("../images/backgrounds/sorbet-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.blog-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.blog-link {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+
+/* подписка */
+.subscription {
+  width: 570px;
+  background-color: #fcfcfc;
+  background-image: url("../images/backgrounds/postal-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.subscription-container {
+  width: 558px;
+  min-height: 208px;
+  background-color: #fcfcfc;
+  /* почему элемент прижимается к нижней части родительского элемента,
+  хотя выставлены автоматические отступы со всех сторон? Если добавить
+  отдельно margin-bottom, то все работает*/
+  margin: auto;
+
+}
+
+
+/* блог и подписка */
+.blog-and-subscription-container {
+  justify-content: space-between;
+}
+
+
+/* доставка */
+.delivery {
+  min-height: 534px;
+  background-color: #fcfcfc;
+  background-image: url("../images/backgrounds/ice-cream-background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.delivery-title {
+  margin-top: 167px;
+  margin-left: 100px;
+}
+.delivery-text {
+  margin-bottom: 167px;
+  margin-left: 100px;
+
+}
+.delivery-form {
+  width: 500px;
+  min-height: 406px;
+  background-color: #fcfcfc;
+  margin-top: 64px;
+  margin-right: 64px;
+  margin-left: 64px;
+}
+
+
+/* контакты */
+.contacts {
+  min-height: 492px;
+  background-color: #fcfcfc;
+  background-image: url("../images/backgrounds/ice-cream-background-2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.contacts-container {
+  width: 343px;
+  min-height: 364px;
+  background-color: #fcfcfc;
+/* почему не применился отступ сверху? */
+  margin-top: 64px;
+  margin-bottom: 64px;
+  margin-left: 64px;
+}
+.contacts-address-text, .contacts-address-tel {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.working-hours {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+/* подвал */
+.main-footer {
+  height: 153px;
+  justify-content: space-between;
+}
+.footer-social, .footer-about-us, .footer-copyright {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.footer-about-us-list {
+  width: 356px;
+  min-height: 48px;
+  flex-wrap: wrap;
+}
+.footer-about-us-item {
+  margin-left: 24px;
+}
+.footer-about-us-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.footer-selected-link {
+  font-weight: 700;
+}
+.footer-copyright {
+  margin-right: 14px;
+}
+.footer-copyright-text, .footer-copyright-link {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.footer-copyright-link {
+  text-decoration: underline;
+}
+
+
+/* стили для catalog.html */
+/* хлебные крошки */
+.catalog-breadcrumbs {
+  padding: 0;
+}
+.catalog-breadcrumbs-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.breadcrumbs-link-current {
+  text-decoration: none;
+}
+
+
+/* фильтр */
+.catalog-filter {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+
+/* каталог товаров */
+.catalog-products-list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-card {
+  width: 270px;
+  min-height: 281px;
+  margin-bottom: 91px;
+}
+.product-card:nth-last-child(-n+4) {
+  margin-bottom: 57px;
+}
+.product-card-article {
+  background-color: #fcfcfc;
+}
+.product-card-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-card-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.product-card-title, .product-card-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.product-card-text {
+  text-align: center;
+}
+
