@@ -63,6 +63,7 @@
             </div>
             <img class="features-slider-image" src="images/products/product-image-ice-cream-1.png" width="306" height="507" alt="Пломбир с клубничным джемом.">
           </li>
+
           <li class="features-slider-item item">
             <img class="features-slider-image" src="images/products/product-image-ice-cream-mini-2.png" width="66" height="150" alt="Сливочное морожение со вкусом банана.">
           </li>
@@ -76,6 +77,7 @@
             <a class="features-link link button button-features" href="#">Заказать</a>
             <img class="features-slider-image" src="images/products/product-image-ice-cream-2.png" width="306" height="507" alt="Сливочное мороженое со вкусом банана.">
           </li>
+
           <li class="features-slider-item item">
             <img class="features-slider-image" src="images/products/product-image-ice-cream-mini-3.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу.">
           </li>
@@ -89,6 +91,7 @@
             <a class="features-link link button button-features" href="#">Заказать</a>
             <img class="features-slider-image" src="images/products/product-image-ice-cream-3.png" width="306" height="507" alt="Карамельный пломбир с маршмеллоу.">
           </li>
+
           <li class="features-slider-item item">
             <img class="features-slider-image" src="images/products/product-image-ice-cream-mini-1.png" alt="Пломбир с клубничным джемом.">
           </li>
@@ -127,7 +130,7 @@
 
       <section class="social">
         <h2 class="visually-hidden" hidden>Наши социальные сети</h2>
-        <div class="container">
+        <div class="social-container">
           <ul class="social-list list flex-container">
             <li class="social-item item">
               <a class="social-link" href="https://vk.com/htmlacademy">
@@ -247,20 +250,16 @@
           <h2 class="advantages-title title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <div class="advantages-list-container">
             <ul class="advantages-list list flex-container">
-              <div class="advantages-left-column">
-                <li class="advantages-item advantages-item-one item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
-                <li class="advantages-item advantages-item-two item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
-              </div>
-              <div class="advantages-right-column">
-                <li class="advantages-item advantages-item-three item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
-                <li class="advantages-item advantages-item-four item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
-              </div>
+              <li class="advantages-item advantages-item-one item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="advantages-item advantages-item-two item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
+              <li class="advantages-item advantages-item-three item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+              <li class="advantages-item advantages-item-four item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <div class="blog-and-subscription-container">
+      <div class="blog-and-subscription-container flex-container">
         <article class="blog">
           <h2 class="blog-title">Новое в нашем блоге</h2>
           <a class="blog-link link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -281,43 +280,49 @@
         </section>
       </div>
 
-      <section class="delivery">
-        <h2 class="delivery-title title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-        <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <label>Дата
-            <input type="text" name="delivery-form-date" placeholder="01.04.2020">
-          </label>
-          <label>Телефон
-            <input type="tel" name="delivery-form-phone" placeholder="+7 800 999-00-00">
-          </label>
-          <label>Адрес
-            <input type="text" name="delivery-form-address" placeholder="ул.Большая Конюшенная, 19/8">
-          </label>
-          <button class="delivery-form-button link button button-delivery" type="button">Отправить</button>
-        </form>
+      <section class="delivery flex-container">
+        <div class="delivery-container">
+          <h2 class="delivery-title title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+        </div>
+        <div class="delivery-container">
+          <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+            <label>Дата
+              <input type="text" name="delivery-form-date" placeholder="01.04.2020">
+            </label>
+            <label>Телефон
+              <input type="tel" name="delivery-form-phone" placeholder="+7 800 999-00-00">
+            </label>
+            <label>Адрес
+              <input type="text" name="delivery-form-address" placeholder="ул.Большая Конюшенная, 19/8">
+            </label>
+            <button class="delivery-form-button link button button-delivery" type="button">Отправить</button>
+          </form>
+        </div>
       </section>
 
       <section class="contacts">
-        <h2 class="visually-hidden" hidden>Наши контакты</h2>
-        <p class="contacts-title">Адрес главного офиса и офлайн-магазина:</p>
-        <address class="contacts-address">
-          <p class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
-        </address>
-        <p class="contacts-subtitle">Для заказов по телефону:</p>
-        <address class="contacts-address">
-            <a class="contacts-address-tel link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-        <p class="working-hours">(с 10 до 20 ежедневно)</p>
-        <a class="contact-form-link link button button-contacts" href="#">Форма обратной связи</a>
+        <div class="contacts-container">
+          <h2 class="visually-hidden" hidden>Наши контакты</h2>
+          <p class="contacts-title">Адрес главного офиса и офлайн-магазина:</p>
+          <address class="contacts-address">
+            <p class="contacts-address-text">наб. реки Карповки, 5 лит П, Санкт-Петербург</p>
+          </address>
+          <p class="contacts-subtitle">Для заказов по телефону:</p>
+          <address class="contacts-address">
+              <a class="contacts-address-tel link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+          <p class="working-hours">(с 10 до 20 ежедневно)</p>
+          <a class="contact-form-link link button button-contacts" href="#">Форма обратной связи</a>
+        </div>
       </section>
     </main>
 
-    <footer class="main-footer global-layout">
+    <footer class="main-footer global-layout flex-container">
       <section class="footer-social">
         <h2 class="visually-hidden" hidden>Наши социальные сети</h2>
-        <ul class="footer-social-list list">
+        <ul class="footer-social-list list flex-container">
           <li class="footer-social-item item">
             <a class="footer-social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
@@ -338,7 +343,7 @@
 
       <section class="footer-about-us">
         <h2 class="visually-hidden" hidden>О нас</h2>
-        <ul class="footer-about-us-list list">
+        <ul class="footer-about-us-list list flex-container">
           <li class="footer-about-us-item item footer-item-current">
             <a class="footer-about-us-link link footer-selected-link" href="#">Для поставщиков</a>
           </li>

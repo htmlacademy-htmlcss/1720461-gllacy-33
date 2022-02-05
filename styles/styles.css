@@ -69,6 +69,8 @@ body {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
+  margin: 0;
+  padding: 0;
 }
 .yellow-bg {
   background-color: #fcc850;
@@ -82,6 +84,9 @@ body {
 
 
 /* шапка */
+.main-header {
+  height: 104px;
+}
 .main-navigation-link {
   font-size: 16px;
   line-height: 20px;
@@ -136,19 +141,21 @@ body {
 }
 .promo-item-one {
   width: 570px;
+  min-height: 268px;
   background-color: #ff7799;
   background-image: url("../images/products/cone-of-raspberry.png");
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: right;
+  background-position: right bottom;
 }
 .promo-item-two {
   width: 570px;
+  min-height: 268px;
   background-color: #ff7799;
   background-image: url("../images/products/cone-of-marshmallows.png");
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: right;
+  background-position: right bottom;
 }
 .promo-item-title {
   font-size: 24px;
@@ -171,9 +178,20 @@ body {
 }
 .proposals-item {
   width: 270px;
+  min-height: 281px;
 }
 .proposals-article {
   background-color: #fcfcfc;
+}
+.proposals-article-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.proposals-item-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 .proposals-item-title, .proposals-price {
   font-size: 20px;
@@ -184,14 +202,16 @@ body {
 
 /* преимущества */
 .advantages {
+  min-height: 480px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/wafer-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 .advantages-container {
-  background-color: #fcfcfc;
   width: 1122px;
+  min-height: 432px;
+  background-color: #fcfcfc;
   margin: auto;
 }
 .advantages-title {
@@ -201,16 +221,29 @@ body {
 /* почему нижний margin не работает? */
 margin: 56px 40px 56px 40px;
 }
+.advantages-list {
+  flex-wrap: wrap;
+}
 .advantages-item {
+  width: 442px;
   margin-left: 16px;
 }
 .advantages-item-one, .advantages-item-two {
   margin-right: 32px;
 }
+.advantages-item-one, .advantages-item-two {
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+.advantages-item-three, .advantages-item-four {
+  margin-bottom: 56px;
+}
 
 
 /* блог */
 .blog {
+  width: 570px;
+  min-height: 220px;
   background-color: #ffffff;
   background-image: url("../images/backgrounds/sorbet-background.jpg");
   background-repeat: no-repeat;
@@ -220,6 +253,8 @@ margin: 56px 40px 56px 40px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 .blog-link {
   font-size: 24px;
@@ -230,34 +265,73 @@ margin: 56px 40px 56px 40px;
 
 /* подписка */
 .subscription {
+  width: 570px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/postal-background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 .subscription-container {
+  width: 558px;
+  min-height: 208px;
   background-color: #fcfcfc;
+  /* почему элемент прижимается к нижней части родительского элемента,
+  хотя выставлены автоматические отступы со всех сторон? Если добавить
+  отдельно margin-bottom, то все работает*/
+  margin: auto;
+
+}
+
+
+/* блог и подписка */
+.blog-and-subscription-container {
+  justify-content: space-between;
 }
 
 
 /* доставка */
 .delivery {
+  min-height: 534px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/ice-cream-background-1.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+.delivery-title {
+  margin-top: 167px;
+  margin-left: 100px;
+}
+.delivery-text {
+  margin-bottom: 167px;
+  margin-left: 100px;
+
+}
 .delivery-form {
+  width: 500px;
+  min-height: 406px;
   background-color: #fcfcfc;
+  margin-top: 64px;
+  margin-right: 64px;
+  margin-left: 64px;
 }
 
 
 /* контакты */
 .contacts {
+  min-height: 492px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/ice-cream-background-2.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+.contacts-container {
+  width: 343px;
+  min-height: 364px;
+  background-color: #fcfcfc;
+/* почему не применился отступ сверху? */
+  margin-top: 64px;
+  margin-bottom: 64px;
+  margin-left: 64px;
 }
 .contacts-address-text, .contacts-address-tel {
   font-size: 20px;
@@ -273,6 +347,22 @@ margin: 56px 40px 56px 40px;
 
 
 /* подвал */
+.main-footer {
+  height: 153px;
+  justify-content: space-between;
+}
+.footer-social, .footer-about-us, .footer-copyright {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.footer-about-us-list {
+  width: 356px;
+  min-height: 48px;
+  flex-wrap: wrap;
+}
+.footer-about-us-item {
+  margin-left: 24px;
+}
 .footer-about-us-link {
   font-size: 14px;
   line-height: 20px;
@@ -280,6 +370,9 @@ margin: 56px 40px 56px 40px;
 }
 .footer-selected-link {
   font-weight: 700;
+}
+.footer-copyright {
+  margin-right: 14px;
 }
 .footer-copyright-text, .footer-copyright-link {
   font-size: 12px;
