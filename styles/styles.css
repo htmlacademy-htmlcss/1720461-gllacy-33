@@ -109,6 +109,13 @@ body {
 
 
 /* особенности */
+.features {
+  min-height: 554px;
+}
+.features-slider-item {
+  width: 873px;
+  position: relative;
+}
 .features-title {
   font-size: 36px;
 }
@@ -120,6 +127,47 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+}
+/* почему-то у меня не получилось вставить изображение через background-image
+и соответственно я не могу изменить размеры изображения */
+.slide-one::before {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-2.png");
+  position: absolute;
+  left: 946px;
+  top: 202px;
+}
+/* пробовал уменьшить повторные стили (создал классы .slide::before И .slide::after
+и поместил туда position, left, top) но не получилось, псевдоэлементы появились, но
+почему-то не позиционировались */
+.slide-one::after {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-3.png");
+  position: absolute;
+  left: 1087px;
+  top: 202px;
+}
+.slide-two::before {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-3.png");
+  position: absolute;
+  left: 946px;
+  top: 202px;
+}
+.slide-two::after {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-1.png");
+  position: absolute;
+  left: 1087px;
+  top: 202px;
+}
+.slide-three::before {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-1.png");
+  position: absolute;
+  left: 946px;
+  top: 202px;
+}
+.slide-three::after {
+  content: url("../images/backgrounds/background-image-ice-cream-mini-2.png");
+  position: absolute;
+  left: 1087px;
+  top: 202px;
 }
 
 
