@@ -64,6 +64,7 @@ body {
   font-style: normal;
   color: inherit;
   text-decoration: none;
+
 }
 .title {
   font-size: 32px;
@@ -240,6 +241,9 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+.proposals-item-text {
+  text-align: center;
 }
 .proposals-item-title, .proposals-price {
   font-size: 20px;
@@ -434,6 +438,9 @@ margin: 56px 40px 56px 40px;
 
 /* стили для catalog.html */
 /* хлебные крошки */
+.catalog-breadcrumbs {
+  padding: 0;
+}
 .catalog-breadcrumbs-link {
   font-size: 14px;
   line-height: 20px;
@@ -454,8 +461,37 @@ margin: 56px 40px 56px 40px;
 
 
 /* каталог товаров */
+.catalog-products-list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-card {
+  width: 270px;
+  min-height: 281px;
+  margin-bottom: 91px;
+}
+.product-card:nth-last-child(-n+4) {
+  margin-bottom: 57px;
+}
+.product-card-article {
+  background-color: #fcfcfc;
+}
+.product-card-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-card-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 .product-card-title, .product-card-price {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
 }
+.product-card-text {
+  text-align: center;
+}
+
