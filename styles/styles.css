@@ -130,63 +130,32 @@ body {
   line-height: 20px;
   font-weight: 700;
 }
-
-/* пробовал уменьшить повторные стили (создал классы .slide::before И .slide::after
-и поместил туда position, left, top) но не получилось, псевдоэлементы появились, но
-почему-то не позиционировались */
-.slide-one::before {
+.slide::before {
   content: "";
-  background: url('../images/backgrounds/background-image-ice-cream-mini-2.png') no-repeat;
   position: absolute;
   width: 66px;
   height: 150px;
   left: 946px;
   top: 202px;
+  background-repeat: no-repeat;
 }
-.slide-one::after {
+.slide::after {
   content: "";
-  background: url('../images/backgrounds/background-image-ice-cream-mini-3.png') no-repeat;
   position: absolute;
   width: 66px;
   height: 150px;
   left: 1087px;
   top: 202px;
+  background-repeat: no-repeat;
 }
-.slide-two::before {
-  content: "";
-  background: url('../images/backgrounds/background-image-ice-cream-mini-3.png') no-repeat;
-  position: absolute;
-  width: 66px;
-  height: 150px;
-  left: 946px;
-  top: 202px;
+.slide-one::before, .slide-three::after {
+  background-image: url('../images/backgrounds/background-image-ice-cream-mini-2.png');
 }
-.slide-two::after {
-  content: "";
-  background: url('../images/backgrounds/background-image-ice-cream-mini-1.png') no-repeat;
-  position: absolute;
-  width: 66px;
-  height: 150px;
-  left: 1087px;
-  top: 202px;
+.slide-one::after, .slide-two::before {
+  background-image: url('../images/backgrounds/background-image-ice-cream-mini-3.png');
 }
-.slide-three::before {
-  content: "";
-  background: url('../images/backgrounds/background-image-ice-cream-mini-1.png') no-repeat;
-  position: absolute;
-  width: 66px;
-  height: 150px;
-  left: 946px;
-  top: 202px;
-}
-.slide-three::after {
-  content: "";
-  background: url('../images/backgrounds/background-image-ice-cream-mini-2.png') no-repeat;
-  position: absolute;
-  width: 66px;
-  height: 150px;
-  left: 1087px;
-  top: 202px;
+.slide-two::after, .slide-three::before {
+  background-image: url('../images/backgrounds/background-image-ice-cream-mini-1.png');
 }
 
 
