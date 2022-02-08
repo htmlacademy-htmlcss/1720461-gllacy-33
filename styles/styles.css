@@ -110,12 +110,9 @@ body {
 
 
 /* особенности */
-.features {
-  min-height: 554px;
-}
 .features-slider-item {
   width: 873px;
-  min-height: 554px;
+  height: 554px;
   position: relative;
 }
 .features-title {
@@ -177,7 +174,6 @@ body {
 }
 .promo-item-one {
   width: 570px;
-  min-height: 268px;
   background-color: #ff7799;
   background-image: url("../images/products/cone-of-raspberry.png");
   background-repeat: no-repeat;
@@ -186,7 +182,6 @@ body {
 }
 .promo-item-two {
   width: 570px;
-  min-height: 268px;
   background-color: #ff7799;
   background-image: url("../images/products/cone-of-marshmallows.png");
   background-repeat: no-repeat;
@@ -214,7 +209,6 @@ body {
 }
 .proposals-item {
   width: 270px;
-  min-height: 281px;
 }
 .proposals-article {
   background-color: #fcfcfc;
@@ -241,7 +235,6 @@ body {
 
 /* преимущества */
 .advantages {
-  min-height: 480px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/wafer-background.jpg");
   background-repeat: no-repeat;
@@ -249,7 +242,6 @@ body {
 }
 .advantages-container {
   width: 1122px;
-  min-height: 432px;
   background-color: #fcfcfc;
   margin: auto;
 }
@@ -282,7 +274,6 @@ margin: 56px 40px 56px 40px;
 /* блог */
 .blog {
   width: 570px;
-  min-height: 220px;
   background-color: #ffffff;
   background-image: url("../images/backgrounds/sorbet-background.jpg");
   background-repeat: no-repeat;
@@ -312,7 +303,6 @@ margin: 56px 40px 56px 40px;
 }
 .subscription-container {
   width: 558px;
-  min-height: 208px;
   background-color: #fcfcfc;
   /* почему элемент прижимается к нижней части родительского элемента,
   хотя выставлены автоматические отступы со всех сторон? Если добавить
@@ -329,7 +319,6 @@ margin: 56px 40px 56px 40px;
 
 /* доставка */
 .delivery {
-  min-height: 534px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/ice-cream-background-1.jpg");
   background-repeat: no-repeat;
@@ -346,7 +335,6 @@ margin: 56px 40px 56px 40px;
 }
 .delivery-form {
   width: 500px;
-  min-height: 406px;
   background-color: #fcfcfc;
   margin-top: 64px;
   margin-right: 64px;
@@ -356,7 +344,6 @@ margin: 56px 40px 56px 40px;
 
 /* контакты */
 .contacts {
-  min-height: 492px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/ice-cream-background-2.jpg");
   background-repeat: no-repeat;
@@ -364,7 +351,6 @@ margin: 56px 40px 56px 40px;
 }
 .contacts-container {
   width: 343px;
-  min-height: 364px;
   background-color: #fcfcfc;
 /* почему не применился отступ сверху? */
   margin-top: 64px;
@@ -395,7 +381,6 @@ margin: 56px 40px 56px 40px;
 }
 .footer-about-us-list {
   width: 356px;
-  min-height: 48px;
   flex-wrap: wrap;
 }
 .footer-about-us-item {
@@ -453,7 +438,6 @@ margin: 56px 40px 56px 40px;
 }
 .product-card {
   width: 270px;
-  min-height: 281px;
   margin-bottom: 91px;
 }
 .product-card:nth-last-child(-n+4) {
@@ -480,4 +464,3 @@ margin: 56px 40px 56px 40px;
 .product-card-text {
   text-align: center;
 }
-
