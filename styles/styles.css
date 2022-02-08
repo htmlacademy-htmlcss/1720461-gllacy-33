@@ -115,6 +115,7 @@ body {
 }
 .features-slider-item {
   width: 873px;
+  min-height: 554px;
   position: relative;
 }
 .features-title {
@@ -129,44 +130,61 @@ body {
   line-height: 20px;
   font-weight: 700;
 }
-/* почему-то у меня не получилось вставить изображение через background-image
-и соответственно я не могу изменить размеры изображения */
-.slide-one::before {
-  content: url("../images/backgrounds/background-image-ice-cream-mini-2.png");
-  position: absolute;
-  left: 946px;
-  top: 202px;
-}
+
 /* пробовал уменьшить повторные стили (создал классы .slide::before И .slide::after
 и поместил туда position, left, top) но не получилось, псевдоэлементы появились, но
 почему-то не позиционировались */
-.slide-one::after {
-  content: url("../images/backgrounds/background-image-ice-cream-mini-3.png");
+.slide-one::before {
+  content: "";
+  background: url('../images/backgrounds/background-image-ice-cream-mini-2.png') no-repeat;
   position: absolute;
+  width: 66px;
+  height: 150px;
+  left: 946px;
+  top: 202px;
+}
+.slide-one::after {
+  content: "";
+  background: url('../images/backgrounds/background-image-ice-cream-mini-3.png') no-repeat;
+  position: absolute;
+  width: 66px;
+  height: 150px;
   left: 1087px;
   top: 202px;
 }
 .slide-two::before {
-  content: url("../images/backgrounds/background-image-ice-cream-mini-3.png");
+  content: "";
+  background: url('../images/backgrounds/background-image-ice-cream-mini-3.png') no-repeat;
   position: absolute;
+  width: 66px;
+  height: 150px;
   left: 946px;
   top: 202px;
 }
 .slide-two::after {
-  content: url("../images/backgrounds/background-image-ice-cream-mini-1.png");
+  content: "";
+  background: url('../images/backgrounds/background-image-ice-cream-mini-1.png') no-repeat;
   position: absolute;
+  width: 66px;
+  height: 150px;
   left: 1087px;
   top: 202px;
 }
 .slide-three::before {
-  content: url("../images/backgrounds/background-image-ice-cream-mini-1.png");
+  content: "";
+  background: url('../images/backgrounds/background-image-ice-cream-mini-1.png') no-repeat;
   position: absolute;
+  width: 66px;
+  height: 150px;
   left: 946px;
   top: 202px;
 }
 .slide-three::after {
-  content: url("../images/backgrounds/background-image-ice-cream-mini-2.png");
+  content: "";
+  background: url('../images/backgrounds/background-image-ice-cream-mini-2.png') no-repeat;
   position: absolute;
+  width: 66px;
+  height: 150px;
   left: 1087px;
   top: 202px;
 }
@@ -331,7 +349,6 @@ margin: 56px 40px 56px 40px;
   хотя выставлены автоматические отступы со всех сторон? Если добавить
   отдельно margin-bottom, то все работает*/
   margin: auto;
-
 }
 
 
