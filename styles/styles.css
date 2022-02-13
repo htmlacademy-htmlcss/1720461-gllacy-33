@@ -234,6 +234,10 @@ body {
   width: 230px;
   margin-left: auto;
 }
+.social-item {
+  width: 32px;
+  height: 32px;
+}
 
 
 /* акции */
@@ -544,6 +548,10 @@ body {
   margin-top: 48px;
   margin-bottom: 48px;
 }
+.footer-social-list {
+  width: 32px;
+  height: 32px;
+}
 .footer-about-us-list {
   width: 356px;
   flex-wrap: wrap;
@@ -559,8 +567,19 @@ body {
 .footer-selected-link {
   font-weight: 700;
 }
+.footer-about-us-link.one, .footer-about-us-link.three {
+  width: 126px;
+
+}
+
 .footer-copyright {
   margin-right: 14px;
+}
+.footer-copyright-image {
+  margin-bottom: 12px;
+}
+.footer-copyright-text {
+  margin: 0;
 }
 .footer-copyright-text, .footer-copyright-link {
   font-size: 12px;
