@@ -80,6 +80,13 @@ body {
   border-radius: 26px;
   padding: 12px 32px;
 }
+.button-second {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #fcfcfc;
+  background-color: #ff2f64;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -267,7 +274,7 @@ body {
 .promo-item-text {
   width: 321px;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 43px;
 }
 .promo-item-link {
   font-size: 16px;
@@ -343,6 +350,7 @@ body {
 }
 .advantages-container {
   background-color: #fcfcfc;
+  border-radius: 16px;
   padding-top: 56px;
 }
 .advantages-title {
@@ -374,19 +382,24 @@ body {
 /* блог */
 .blog {
   width: 570px;
+  box-sizing: border-box;
   background-color: #ffffff;
   background-image: url("../images/backgrounds/sorbet-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  border-radius: 16px;
+  padding: 33px 0 63px 32px;
 }
 .blog-title {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   margin: 0;
-  padding: 0;
+  margin-bottom: 13px;
 }
 .blog-link {
+  display: block;
+  width: 303px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -396,24 +409,36 @@ body {
 /* подписка */
 .subscription {
   width: 570px;
+  box-sizing: border-box;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/postal-background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  border-radius: 16px;
+  padding: 6px;
 }
 .subscription-container {
   width: 558px;
+  box-sizing: border-box;
   background-color: #fcfcfc;
-  /* почему элемент прижимается к нижней части родительского элемента,
-  хотя выставлены автоматические отступы со всех сторон? Если добавить
-  отдельно margin-bottom, то все работает*/
-  margin: auto;
+  border-radius: 16px;
+  padding: 26px;
+  padding-bottom: 20px;
+}
+.subscription-title {
+  margin: 0;
+  margin-bottom: 42px;
+}
+.subscription-form {
+  align-items: center;
+  justify-content: space-between;
 }
 
 
 /* блог и подписка */
 .blog-and-subscription-container {
   justify-content: space-between;
+  margin-bottom: 76px;
 }
 
 
@@ -431,7 +456,6 @@ body {
 .delivery-text {
   margin-bottom: 167px;
   margin-left: 100px;
-
 }
 .delivery-form {
   width: 500px;
