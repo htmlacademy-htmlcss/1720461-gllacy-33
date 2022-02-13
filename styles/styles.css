@@ -72,6 +72,14 @@ body {
   margin: 0;
   padding: 0;
 }
+.button {
+  background-color: #fcfcfc;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgb(254, 175, 195, 0.6);
+  border-radius: 26px;
+  padding: 12px 32px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -155,17 +163,25 @@ body {
 
 
 /* особенности */
+.features-slider-list {
+  width: 1170px;
+}
 .features-slider-item {
   width: 873px;
-  height: 554px;
   position: relative;
+  padding: 21px 0 26px 70px;
 }
 .features-title {
   font-size: 36px;
+  padding-top: 136px;
+  padding-bottom: 24px;
 }
 .features-text {
+  width: 414px;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 48px;
 }
 .features-link {
   font-size: 16px;
