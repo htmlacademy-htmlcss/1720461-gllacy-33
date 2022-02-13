@@ -16,7 +16,7 @@
               </a>
               <ul class="main-navigation-list list flex-container">
                 <li class="main-navigation-item item">
-                  <a class="main-navigation-link link" href="catalog.html">Каталог</a>
+                  <a class="main-navigation-link link" href="#">Каталог</a>
                 </li>
                 <li class="main-navigation-item item">
                   <a class="main-navigation-link link" href="#">Доставка и оплата</a>
@@ -35,15 +35,15 @@
 
             <nav class="user-navigation">
               <ul class="user-navigation-list list flex-container">
-                <li class="user-navigation-item item button button-nav">
+                <li class="user-navigation-item item button-nav">
                   <a class="user-navigation-link link" href="#">
                     <span class="visually-hidden">Поиск</span>
                   </a>
                 </li>
-                <li class="user-navigation-item item button button-nav">
+                <li class="user-navigation-item item button-nav">
                   <a class="user-navigation-link link" href="#">Вход</a>
                 </li>
-                <li class="user-navigation-item item button button-nav">
+                <li class="user-navigation-item item button-nav">
                   <a class="user-navigation-link link" href="#">2 товара</a>
                 </li>
               </ul>
@@ -346,35 +346,38 @@
           </li>
         </ul>
 
-        <button class="catalog-products-button button button-show-more" type="button">Показать еще</button>
+        <div class="catalog-show-more flex-container">
+          <button class="catalog-products-button button button-show-more" type="button">Показать еще</button>
 
-        <ul class="catalog-pagination">
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link catalog-pagination-current">1</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link" href="#">2</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link" href="#">3</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link" href="#">4</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link" href="#">5</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="catalog-pagination flex-container">
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link pagination-prev pagination-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link catalog-pagination-current">1</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link" href="#">2</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link" href="#">3</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link" href="#">4</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link" href="#">5</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link pagination-next" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </section>
     </main>
 
@@ -403,18 +406,22 @@
       <section class="footer-about-us">
         <h2 class="visually-hidden">О нас</h2>
         <ul class="footer-about-us-list list flex-container">
-          <li class="footer-about-us-item item footer-item-current">
-            <a class="footer-about-us-link link footer-selected-link" href="#">Для поставщиков</a>
-          </li>
-          <li class="footer-about-us-item item">
-            <a class="footer-about-us-link link" href="#">О производстве</a>
-          </li>
-          <li class="footer-about-us-item item">
-            <a class="footer-about-us-link link" href="#">Наши документы</a>
-          </li>
-          <li class="footer-about-us-item item">
-            <a class="footer-about-us-link link" href="#">Экологические стандарты</a>
-          </li>
+          <div>
+            <li class="footer-about-us-item item footer-item-current">
+              <a class="footer-about-us-link one link footer-selected-link" href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-about-us-item item">
+              <a class="footer-about-us-link two link" href="#">О производстве</a>
+            </li>
+          </div>
+          <div>
+            <li class="footer-about-us-item item">
+              <a class="footer-about-us-link three link" href="#">Наши документы</a>
+            </li>
+            <li class="footer-about-us-item item">
+              <a class="footer-about-us-link four link" href="#">Экологические стандарты</a>
+            </li>
+          </div>
         </ul>
       </section>
 

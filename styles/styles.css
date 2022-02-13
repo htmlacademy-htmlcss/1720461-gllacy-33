@@ -605,6 +605,9 @@ body {
 .breadcrumbs-link-current {
   text-decoration: none;
 }
+.catalog-breadcrumbs-link:not(.catalog-breadcrumbs-item:last-child > .catalog-breadcrumbs-link) {
+  margin-right: 28px;
+}
 
 
 /* фильтр */
@@ -628,6 +631,7 @@ body {
   margin-bottom: 57px;
 }
 .product-card-article {
+  box-sizing: border-box;
   background-color: #fcfcfc;
 }
 .product-card-image {
@@ -648,3 +652,4 @@ body {
 .product-card-text {
   text-align: center;
 }
+
