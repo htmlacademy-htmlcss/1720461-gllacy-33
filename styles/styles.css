@@ -136,10 +136,10 @@ body {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  margin-right: 8px;
-  margin-left: 8px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 /* это правильные селекторы? Или правильнее было добавить в них по классу? */
 /* .user-navigation-list > .user-navigation-item:nth-child(1) > .user-navigation-link {
@@ -278,29 +278,50 @@ body {
 
 /* предложения */
 .proposals-title {
+  width: 527px;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 107px;
 }
 .proposals-list {
   justify-content: space-between;
 }
-.proposals-item {
-  width: 270px;
-}
 .proposals-article {
+  width: 270px;
+  height: 281px;
+  box-sizing: border-box;
   background-color: #fcfcfc;
+  border-radius: 8px;
+  margin-bottom: 80px;
+  padding: 133px 40px 28px 40px;
+}
+.proposals-link {
+  position: relative;
+}
+.button-add-to-cart {
+  width: 32px;
+  height: 32px;
+  background-color: #ff2f64;
 }
 .proposals-article-image {
+  position: absolute;
+  left: 10px;
+  bottom: 132px;
   display: block;
+  border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 .proposals-item-title {
   text-align: center;
   margin: 0;
-  padding: 0;
+  margin-bottom: 8px;
 }
 .proposals-item-text {
   text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+
 }
 .proposals-item-title, .proposals-price {
   font-size: 20px;
