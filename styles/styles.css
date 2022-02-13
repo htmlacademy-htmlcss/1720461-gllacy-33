@@ -141,7 +141,7 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
 }
-/* это правильные селекторы? */
+/* это правильные селекторы? Или правильнее было добавить в них по классу? */
 /* .user-navigation-list > .user-navigation-item:nth-child(1) > .user-navigation-link {
 
 } */
@@ -163,6 +163,9 @@ body {
 
 
 /* особенности */
+.features-slider-list {
+  margin-bottom: 80px;
+}
 .features-slider-list {
   width: 1170px;
 }
@@ -228,31 +231,43 @@ body {
 
 /* акции */
 .promo-title {
+  width: 443px;
   text-align: center;
+  margin: 0 auto 56px auto;
 }
 .promo-list {
   justify-content: space-between;
+  margin-bottom: 80px;
 }
-.promo-item-one {
+.promo-item-column {
   width: 570px;
+  box-sizing: border-box;
   background-color: #ff7799;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 16px;
+  padding: 40px 0 52px 40px;
+
+}
+.promo-item-column.one {
   background-image: url("../images/products/cone-of-raspberry.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right bottom;
+  background-position: right 15px bottom;
 }
-.promo-item-two {
-  width: 570px;
-  background-color: #ff7799;
+.promo-item-column.two {
   background-image: url("../images/products/cone-of-marshmallows.png");
-  background-repeat: no-repeat;
-  background-size: auto;
   background-position: right bottom;
 }
 .promo-item-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.promo-item-text {
+  width: 321px;
+  margin: 0;
+  margin-bottom: 42px;
 }
 .promo-item-link {
   font-size: 16px;
