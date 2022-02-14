@@ -30,15 +30,15 @@ html {
 }
 
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
   font-family: "Inter", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  font-style: normal;
   color: #2d3440;
   background-color: #feafc3;
 }
@@ -67,29 +67,29 @@ body {
 
 .link {
   font-family: "Inter", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  font-style: normal;
   color: inherit;
   text-decoration: none;
 }
 
 .title {
+  margin: 0;
+  padding: 0;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
-  margin: 0;
-  padding: 0;
 }
 
 .button {
+  padding: 12px 32px;
   background-color: #fcfcfc;
   border-width: 4px;
   border-style: solid;
   border-color: rgb(254, 175, 195, 0.6);
   border-radius: 26px;
-  padding: 12px 32px;
 }
 
 .button-second {
@@ -136,16 +136,16 @@ body {
 }
 
 .main-navigation-list {
-  width: 528px;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+  width: 528px;
 }
 
 .main-navigation-link {
+  padding: 42px 16px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  padding: 42px 16px;
 }
 
 .main-address-navigation {
@@ -153,22 +153,22 @@ body {
 }
 
 .main-phone-link {
+  margin-right: 8px;
+  padding: 42px 0 42px 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  padding: 42px 0 42px 0;
-  margin-right: 8px;
 }
 
 .user-navigation-link {
   min-width: 32px;
   min-height: 32px;
+  padding: 6px 18px 6px 40px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
-  padding: 6px 18px 6px 40px;
 }
 
 .user-navigation-item:first-child > .user-navigation-link {
@@ -195,23 +195,23 @@ body {
 }
 
 .features-slider-item {
-  width: 873px;
   position: relative;
+  width: 873px;
   padding: 21px 0 26px 70px;
 }
 
 .features-title {
-  font-size: 36px;
   padding-top: 136px;
   padding-bottom: 24px;
+  font-size: 36px;
 }
 
 .features-text {
   width: 414px;
-  font-size: 18px;
-  line-height: 24px;
   margin: 0;
   margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .features-link {
@@ -223,20 +223,20 @@ body {
 .slide::before {
   content: "";
   position: absolute;
+  top: 202px;
+  left: 946px;
   width: 66px;
   height: 150px;
-  left: 946px;
-  top: 202px;
   background-repeat: no-repeat;
 }
 
 .slide::after {
   content: "";
   position: absolute;
+  top: 202px;
+  left: 1087px;
   width: 66px;
   height: 150px;
-  left: 1087px;
-  top: 202px;
   background-repeat: no-repeat;
 }
 
@@ -270,8 +270,8 @@ body {
 /* акции */
 .promo-title {
   width: 443px;
-  text-align: center;
   margin: 0 auto 56px auto;
+  text-align: center;
 }
 
 .promo-list {
@@ -280,13 +280,13 @@ body {
 }
 
 .promo-item-column {
-  width: 570px;
   box-sizing: border-box;
+  width: 570px;
+  padding: 40px 0 52px 40px;
   background-color: #ff7799;
   background-repeat: no-repeat;
   background-size: auto;
   border-radius: 16px;
-  padding: 40px 0 52px 40px;
 }
 
 .promo-item-column.one {
@@ -300,11 +300,11 @@ body {
 }
 
 .promo-item-title {
+  margin: 0;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 16px;
 }
 
 .promo-item-text {
@@ -323,9 +323,9 @@ body {
 /* предложения */
 .proposals-title {
   width: 527px;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 107px;
+  text-align: center;
 }
 
 .proposals-list {
@@ -333,13 +333,13 @@ body {
 }
 
 .proposals-article {
+  box-sizing: border-box;
   width: 270px;
   height: 281px;
-  box-sizing: border-box;
-  background-color: #fcfcfc;
-  border-radius: 8px;
   margin-bottom: 80px;
   padding: 133px 40px 28px 40px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
 }
 
 .proposals-link {
@@ -354,24 +354,24 @@ body {
 
 .proposals-article-image {
   position: absolute;
-  left: 10px;
   bottom: 132px;
+  left: 10px;
   display: block;
-  border-radius: 50%;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
 }
 
 .proposals-item-title {
-  text-align: center;
   margin: 0;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .proposals-item-text {
-  text-align: center;
   margin: 0;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .proposals-item-title, .proposals-price {
@@ -383,27 +383,27 @@ body {
 
 /* преимущества */
 .advantages {
-  width: 1170px;
   box-sizing: border-box;
+  width: 1170px;
+  margin-bottom: 80px;
+  padding: 24px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/wafer-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 80px;
 }
 
 .advantages-container {
+  padding-top: 56px;
   background-color: #fcfcfc;
   border-radius: 16px;
-  padding-top: 56px;
 }
 
 .advantages-title {
   width: 995px;
-  text-align: center;
   margin: 0 auto 56px auto;
+  text-align: center;
 }
 
 .advantages-list {
@@ -434,22 +434,22 @@ body {
 
 /* блог */
 .blog {
-  width: 570px;
   box-sizing: border-box;
+  width: 570px;
+  padding: 33px 0 63px 32px;
   background-color: #ffffff;
   background-image: url("../images/backgrounds/sorbet-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
-  padding: 33px 0 63px 32px;
 }
 
 .blog-title {
+  margin: 0;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  margin: 0;
-  margin-bottom: 13px;
 }
 
 .blog-link {
@@ -463,23 +463,23 @@ body {
 
 /* подписка */
 .subscription {
-  width: 570px;
   box-sizing: border-box;
+  width: 570px;
+  padding: 6px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/postal-background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
-  padding: 6px;
 }
 
 .subscription-container {
-  width: 558px;
   box-sizing: border-box;
-  background-color: #fcfcfc;
-  border-radius: 16px;
+  width: 558px;
   padding: 26px;
   padding-bottom: 20px;
+  background-color: #fcfcfc;
+  border-radius: 16px;
 }
 
 .subscription-title {
@@ -488,8 +488,8 @@ body {
 }
 
 .subscription-form {
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -504,14 +504,14 @@ body {
 .delivery {
   box-sizing: border-box;
   justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 64px;
+  padding-left: 100px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/ice-cream-background-1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 16px;
-  padding: 64px;
-  padding-left: 100px;
-  margin-bottom: 80px;
 
   /* добавил временно это свойство */
   height: 534px;
@@ -535,13 +535,13 @@ body {
 }
 
 .delivery-form {
-  width: 500px;
   box-sizing: border-box;
-  background-color: #fcfcfc;
-  border-radius: 8px;
+  width: 500px;
   margin-left: 135px;
   padding: 40px;
   padding-bottom: 38px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
 }
 
 .delivery-form-text {
@@ -554,25 +554,25 @@ body {
 /* контакты */
 .contacts {
   box-sizing: border-box;
+  padding: 64px;
+  padding-right: 0;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/ice-cream-background-2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 16px;
-  padding: 64px;
-  padding-right: 0;
 
   /* добавил временно это свойство */
   height: 492px;
 }
 
 .contacts-container {
-  width: 343px;
   box-sizing: border-box;
+  width: 343px;
+  padding: 40px;
+  padding-bottom: 53px;
   background-color: #fcfcfc;
   border-radius: 8px;
-  padding: 40px 40px 40px;
-  padding-bottom: 53px;
 }
 
 .contacts-title {
@@ -588,11 +588,11 @@ body {
 }
 
 .contacts-address-text, .contacts-address-tel {
+  margin: 0;
+  font-style: normal;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-style: normal;
-  margin: 0;
 }
 
 .contacts-address-text {
@@ -600,18 +600,18 @@ body {
 }
 
 .working-hours {
+  margin: 0;
+  margin-bottom: 45px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  margin: 0;
-  margin-bottom: 45px;
 }
 
 
 /* подвал */
 .main-footer {
-  height: 153px;
   justify-content: space-between;
+  height: 153px;
 }
 
 .footer-social, .footer-about-us, .footer-copyright {
@@ -625,8 +625,8 @@ body {
 }
 
 .footer-about-us-list {
-  width: 356px;
   flex-wrap: wrap;
+  width: 356px;
 }
 
 .footer-about-us-item {
@@ -722,14 +722,14 @@ body {
 
 .product-card-image {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .product-card-title {
-  text-align: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .product-card-title, .product-card-price {
