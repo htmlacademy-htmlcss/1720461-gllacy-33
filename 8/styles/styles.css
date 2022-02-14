@@ -6,6 +6,7 @@
   font-weight: 400;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/inter-700.woff2") format("woff2");
@@ -13,6 +14,7 @@
   font-weight: 700;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/inter-900.woff2") format("woff2");
@@ -26,60 +28,70 @@
 html {
   height: 100%;
 }
+
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
   font-family: "Inter", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  font-style: normal;
   color: #2d3440;
   background-color: #feafc3;
 }
+
 .main-container {
   flex-grow: 1;
 }
+
 .flex-container {
   display: flex;
 }
+
 .global-layout {
   width: 1170px;
   margin: 0 auto;
 }
+
 .list {
   margin: 0;
   padding: 0;
 }
+
 .item {
   list-style-type: none;
 }
+
 .link {
   font-family: "Inter", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  font-style: normal;
   color: inherit;
   text-decoration: none;
 }
+
 .title {
+  margin: 0;
+  padding: 0;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
-  margin: 0;
-  padding: 0;
 }
+
 .button {
+  padding: 12px 32px;
   background-color: #fcfcfc;
   border-width: 4px;
   border-style: solid;
   border-color: rgb(254, 175, 195, 0.6);
   border-radius: 26px;
-  padding: 12px 32px;
 }
+
 .button-second {
   font-size: 16px;
   line-height: 20px;
@@ -87,6 +99,7 @@ body {
   color: #fcfcfc;
   background-color: #ff2f64;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -97,12 +110,15 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .yellow-bg {
   background-color: #fcc850;
 }
+
 .blue-bg {
   background-color: #69a9ff;
 }
+
 .rose-bg {
   background-color: #feafc3;
 }
@@ -114,55 +130,55 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
 .main-navigation-logo {
   margin-right: 16px;
 }
+
 .main-navigation-list {
-  width: 568px;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+  width: 528px;
 }
+
 .main-navigation-link {
+  padding: 42px 16px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  padding: 42px 16px;
 }
+
 .main-address-navigation {
   align-items: center;
 }
+
 .main-phone-link {
+  margin-right: 8px;
+  padding: 42px 0 42px 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  padding: 42px 10px 42px 9px;
 }
+
 .user-navigation-link {
   min-width: 32px;
   min-height: 32px;
+  padding: 6px 18px 6px 40px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
-  margin-right: 8px;
-  margin-left: 8px;
 }
-/* это правильные селекторы? Или правильнее было добавить в них по классу? */
-/* .user-navigation-list > .user-navigation-item:nth-child(1) > .user-navigation-link {
 
-} */
-.user-navigation-list > .user-navigation-item:nth-child(2) > .user-navigation-link {
-  padding: 6px 18px 6px 40px;
+.user-navigation-item:first-child > .user-navigation-link {
+  padding: 0;
 }
-.user-navigation-list > .user-navigation-item:nth-child(3) > .user-navigation-link {
-  padding: 6px 16px 6px 40px;
+
+.user-navigation-item + .user-navigation-item > .user-navigation-link {
+  margin-left: 16px;
 }
-/* не совсем уверен в выборе селектора, не хотелось добавлять :nth-child(3),
-вдруг в будущем добавят 4-ый элемент? Обычный :last-child здесь не работает */
-.user-navigation-list > .user-navigation-item:last-child > .user-navigation-link {
-  margin-right: 0;
-}
+
 .navigation-flex-container {
   display: flex;
   justify-content: space-between;
@@ -173,55 +189,65 @@ body {
 .features-slider-list {
   margin-bottom: 80px;
 }
+
 .features-slider-list {
   width: 1170px;
 }
+
 .features-slider-item {
-  width: 873px;
   position: relative;
+  width: 873px;
   padding: 21px 0 26px 70px;
 }
+
 .features-title {
-  font-size: 36px;
   padding-top: 136px;
   padding-bottom: 24px;
+  font-size: 36px;
 }
+
 .features-text {
   width: 414px;
-  font-size: 18px;
-  line-height: 24px;
   margin: 0;
   margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 24px;
 }
+
 .features-link {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
 }
+
 .slide::before {
   content: "";
   position: absolute;
+  top: 202px;
+  left: 946px;
   width: 66px;
   height: 150px;
-  left: 946px;
-  top: 202px;
   background-repeat: no-repeat;
 }
+
 .slide::after {
   content: "";
   position: absolute;
+  top: 202px;
+  left: 1087px;
   width: 66px;
   height: 150px;
-  left: 1087px;
-  top: 202px;
   background-repeat: no-repeat;
 }
+
 .slide-one::before, .slide-three::after {
   background-image: url('../images/backgrounds/background-image-ice-cream-mini-2.png');
 }
+
 .slide-one::after, .slide-two::before {
   background-image: url('../images/backgrounds/background-image-ice-cream-mini-3.png');
 }
+
 .slide-two::after, .slide-three::before {
   background-image: url('../images/backgrounds/background-image-ice-cream-mini-1.png');
 }
@@ -234,6 +260,7 @@ body {
   width: 230px;
   margin-left: auto;
 }
+
 .social-item {
   width: 32px;
   height: 32px;
@@ -243,43 +270,49 @@ body {
 /* акции */
 .promo-title {
   width: 443px;
-  text-align: center;
   margin: 0 auto 56px auto;
+  text-align: center;
 }
+
 .promo-list {
   justify-content: space-between;
   margin-bottom: 80px;
 }
+
 .promo-item-column {
-  width: 570px;
   box-sizing: border-box;
+  width: 570px;
+  padding: 40px 0 52px 40px;
   background-color: #ff7799;
   background-repeat: no-repeat;
   background-size: auto;
   border-radius: 16px;
-  padding: 40px 0 52px 40px;
-
 }
+
 .promo-item-column.one {
   background-image: url("../images/products/cone-of-raspberry.png");
   background-position: right 15px bottom;
 }
+
 .promo-item-column.two {
   background-image: url("../images/products/cone-of-marshmallows.png");
   background-position: right bottom;
 }
+
 .promo-item-title {
+  margin: 0;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 16px;
 }
+
 .promo-item-text {
   width: 321px;
   margin: 0;
   margin-bottom: 43px;
 }
+
 .promo-item-link {
   font-size: 16px;
   line-height: 20px;
@@ -290,49 +323,57 @@ body {
 /* предложения */
 .proposals-title {
   width: 527px;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: 107px;
+  text-align: center;
 }
+
 .proposals-list {
   justify-content: space-between;
 }
+
 .proposals-article {
+  box-sizing: border-box;
   width: 270px;
   height: 281px;
-  box-sizing: border-box;
-  background-color: #fcfcfc;
-  border-radius: 8px;
   margin-bottom: 80px;
   padding: 133px 40px 28px 40px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
 }
+
 .proposals-link {
   position: relative;
 }
+
 .button-add-to-cart {
   width: 32px;
   height: 32px;
   background-color: #ff2f64;
 }
+
 .proposals-article-image {
   position: absolute;
-  left: 10px;
   bottom: 132px;
+  left: 10px;
   display: block;
-  border-radius: 50%;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
 }
+
 .proposals-item-title {
-  text-align: center;
   margin: 0;
   margin-bottom: 8px;
-}
-.proposals-item-text {
   text-align: center;
+}
+
+.proposals-item-text {
   margin: 0;
   margin-bottom: 16px;
+  text-align: center;
 }
+
 .proposals-item-title, .proposals-price {
   font-size: 20px;
   line-height: 24px;
@@ -342,42 +383,50 @@ body {
 
 /* преимущества */
 .advantages {
-  width: 1170px;
   box-sizing: border-box;
+  width: 1170px;
+  margin-bottom: 80px;
+  padding: 24px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/wafer-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 80px;
 }
+
 .advantages-container {
+  padding-top: 56px;
   background-color: #fcfcfc;
   border-radius: 16px;
-  padding-top: 56px;
 }
+
 .advantages-title {
   width: 995px;
-  text-align: center;
   margin: 0 auto 56px auto;
+  text-align: center;
 }
+
 .advantages-list {
   flex-wrap: wrap;
 }
+
 .advantages-item {
   width: 442px;
   margin-left: 16px;
 }
+
 .advantages-item-one, .advantages-item-three {
   margin-left: 104px;
 }
+
 .advantages-item-two, .advantages-item-four {
   margin-left: 94px;
 }
+
 .advantages-item-one, .advantages-item-two {
   margin-bottom: 40px;
 }
+
 .advantages-item-three, .advantages-item-four {
   margin-bottom: 56px;
 }
@@ -385,22 +434,24 @@ body {
 
 /* блог */
 .blog {
-  width: 570px;
   box-sizing: border-box;
+  width: 570px;
+  padding: 33px 0 63px 32px;
   background-color: #ffffff;
   background-image: url("../images/backgrounds/sorbet-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
-  padding: 33px 0 63px 32px;
 }
+
 .blog-title {
+  margin: 0;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  margin: 0;
-  margin-bottom: 13px;
 }
+
 .blog-link {
   display: block;
   width: 303px;
@@ -412,30 +463,33 @@ body {
 
 /* подписка */
 .subscription {
-  width: 570px;
   box-sizing: border-box;
+  width: 570px;
+  padding: 6px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/postal-background.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 16px;
-  padding: 6px;
 }
+
 .subscription-container {
-  width: 558px;
   box-sizing: border-box;
-  background-color: #fcfcfc;
-  border-radius: 16px;
+  width: 558px;
   padding: 26px;
   padding-bottom: 20px;
+  background-color: #fcfcfc;
+  border-radius: 16px;
 }
+
 .subscription-title {
   margin: 0;
   margin-bottom: 42px;
 }
+
 .subscription-form {
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -450,38 +504,46 @@ body {
 .delivery {
   box-sizing: border-box;
   justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 64px;
+  padding-left: 100px;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/ice-cream-background-1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 16px;
-  padding: 64px;
-  padding-left: 100px;
-  margin-bottom: 80px;
 
   /* добавил временно это свойство */
   height: 534px;
 }
+
 /* не понял, как в этом элементе избавиться от верхнего маргина и при этом
 попасть в макет? */
+.delivery-container-content,
+.delivery-container-form {
+  align-self: center;
+}
+
 .delivery-title {
   width: 356px;
-  margin-top: 103px;
   margin-bottom: 24px;
 }
+
 .delivery-text {
   width: 371px;
   margin: 0;
 }
+
 .delivery-form {
-  width: 500px;
   box-sizing: border-box;
-  background-color: #fcfcfc;
-  border-radius: 8px;
+  width: 500px;
   margin-left: 135px;
   padding: 40px;
   padding-bottom: 38px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
 }
+
 .delivery-form-text {
   width: 380px;
   margin: 0;
@@ -492,100 +554,117 @@ body {
 /* контакты */
 .contacts {
   box-sizing: border-box;
+  padding: 64px;
+  padding-right: 0;
   background-color: #fcfcfc;
   background-image: url("../images/backgrounds/ice-cream-background-2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 16px;
-  padding: 64px;
-  padding-right: 0px;
 
   /* добавил временно это свойство */
   height: 492px;
 }
+
 .contacts-container {
-  width: 343px;
   box-sizing: border-box;
+  width: 343px;
+  padding: 40px;
+  padding-bottom: 53px;
   background-color: #fcfcfc;
   border-radius: 8px;
-  padding: 40px 40px 40px;
-  padding-bottom: 53px;
 }
+
 .contacts-title {
   width: 179px;
 }
+
 .contacts-title, .contacts-subtitle {
   margin: 0;
 }
+
 .contacts-title, .contacts-subtitle {
   margin-bottom: 12px;
 }
+
 .contacts-address-text, .contacts-address-tel {
+  margin: 0;
+  font-style: normal;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-style: normal;
-  margin: 0;
 }
+
 .contacts-address-text {
   margin-bottom: 24px;
 }
+
 .working-hours {
+  margin: 0;
+  margin-bottom: 45px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  margin: 0;
-  margin-bottom: 45px;
 }
 
 
 /* подвал */
 .main-footer {
-  height: 153px;
   justify-content: space-between;
+  height: 153px;
 }
+
 .footer-social, .footer-about-us, .footer-copyright {
   margin-top: 48px;
   margin-bottom: 48px;
 }
+
 .footer-social-list {
   width: 32px;
   height: 32px;
 }
+
 .footer-about-us-list {
-  width: 356px;
   flex-wrap: wrap;
+  width: 356px;
 }
+
 .footer-about-us-item {
   margin-left: 24px;
 }
+
 .footer-about-us-link {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 }
+
 .footer-selected-link {
   font-weight: 700;
 }
+
 .footer-about-us-link.one, .footer-about-us-link.three {
   width: 126px;
-
 }
 
 .footer-copyright {
   margin-right: 14px;
 }
+
 .footer-copyright-image {
   margin-bottom: 12px;
 }
+
 .footer-copyright-text {
   margin: 0;
 }
+
 .footer-copyright-text, .footer-copyright-link {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
 }
+
 .footer-copyright-link {
   text-decoration: underline;
 }
@@ -596,15 +675,18 @@ body {
 .catalog-breadcrumbs {
   padding: 0;
 }
+
 .catalog-breadcrumbs-link {
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
   text-decoration: underline;
 }
+
 .breadcrumbs-link-current {
   text-decoration: none;
 }
+
 .catalog-breadcrumbs-link:not(.catalog-breadcrumbs-item:last-child > .catalog-breadcrumbs-link) {
   margin-right: 28px;
 }
@@ -623,33 +705,39 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .product-card {
   width: 270px;
   margin-bottom: 91px;
 }
+
 .product-card:nth-last-child(-n+4) {
   margin-bottom: 57px;
 }
+
 .product-card-article {
   box-sizing: border-box;
   background-color: #fcfcfc;
 }
+
 .product-card-image {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
+
 .product-card-title {
-  text-align: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
+
 .product-card-title, .product-card-price {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
 }
+
 .product-card-text {
   text-align: center;
 }
-
