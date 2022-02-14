@@ -136,7 +136,7 @@ body {
 }
 
 .main-navigation-list {
-  width: 568px;
+  width: 528px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -156,7 +156,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  padding: 42px 10px 42px 9px;
+  padding: 42px 0 42px 0;
+  margin-right: 8px;
 }
 
 .user-navigation-link {
@@ -167,27 +168,15 @@ body {
   font-weight: 400;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
-  margin-right: 8px;
-  margin-left: 8px;
-}
-
-/* это правильные селекторы? Или правильнее было добавить в них по классу? */
-/* .user-navigation-list > .user-navigation-item:nth-child(1) > .user-navigation-link {
-
-} */
-
-.user-navigation-list > .user-navigation-item:nth-child(2) > .user-navigation-link {
   padding: 6px 18px 6px 40px;
 }
 
-.user-navigation-list > .user-navigation-item:nth-child(3) > .user-navigation-link {
-  padding: 6px 16px 6px 40px;
+.user-navigation-item:first-child > .user-navigation-link {
+  padding: 0;
 }
 
-/* не совсем уверен в выборе селектора, не хотелось добавлять :nth-child(3),
-вдруг в будущем добавят 4-ый элемент? Обычный :last-child здесь не работает */
-.user-navigation-list > .user-navigation-item:last-child > .user-navigation-link {
-  margin-right: 0;
+.user-navigation-item + .user-navigation-item > .user-navigation-link {
+  margin-left: 16px;
 }
 
 .navigation-flex-container {
@@ -567,7 +556,7 @@ body {
   background-size: 100% 100%;
   border-radius: 16px;
   padding: 64px;
-  padding-right: 0px;
+  padding-right: 0;
 
   /* добавил временно это свойство */
   height: 492px;
