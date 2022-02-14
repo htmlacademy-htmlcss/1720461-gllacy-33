@@ -519,9 +519,13 @@ body {
 
 /* не понял, как в этом элементе избавиться от верхнего маргина и при этом
 попасть в макет? */
+.delivery-container-content,
+.delivery-container-form {
+  align-self: center;
+}
+
 .delivery-title {
   width: 356px;
-  margin-top: 103px;
   margin-bottom: 24px;
 }
 
@@ -737,4 +741,3 @@ body {
 .product-card-text {
   text-align: center;
 }
-
