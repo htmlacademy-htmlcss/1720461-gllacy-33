@@ -7,16 +7,16 @@
   </head>
   <body class="rose-bg">
     <header class="main-header">
-      <h1 class="visually-hidden" hidden>Магазин мороженого "Глейси"</h1>
+      <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
         <div class="navigation-flex-container global-layout">
           <nav class="main-navigation">
             <div class="flex-container">
               <a class="main-navigation-logo" href="index.html">
-                <img class="main-navigation-logo" src="images/logo.svg" width="137" height="56" alt="Логотип магазина мороженого &quot;Глейси&quot;.">
+                <img class="main-navigation-logo-img" src="images/logo.svg" width="137" height="56" alt="Логотип магазина мороженого &quot;Глейси&quot;.">
               </a>
               <ul class="main-navigation-list list flex-container">
                 <li class="main-navigation-item item">
-                  <a class="main-navigation-link link" href="catalog.html">Каталог</a>
+                  <a class="main-navigation-link link" href="#">Каталог</a>
                 </li>
                 <li class="main-navigation-item item">
                   <a class="main-navigation-link link" href="#">Доставка и оплата</a>
@@ -28,22 +28,22 @@
             </div>
           </nav>
 
-          <div class="flex-container">
+          <div class="main-address-navigation flex-container">
             <address class="main-phone">
               <a class="main-phone-link link" href="tel:+78005558628" aria-label="Телефон для связи.">+7 800 555-86-28</a>
             </address>
 
             <nav class="user-navigation">
               <ul class="user-navigation-list list flex-container">
-                <li class="user-navigation-item item button button-nav">
+                <li class="user-navigation-item item button-nav">
                   <a class="user-navigation-link link" href="#">
                     <span class="visually-hidden">Поиск</span>
                   </a>
                 </li>
-                <li class="user-navigation-item item button button-nav">
+                <li class="user-navigation-item item button-nav">
                   <a class="user-navigation-link link" href="#">Вход</a>
                 </li>
-                <li class="user-navigation-item item button button-nav">
+                <li class="user-navigation-item item button-nav">
                   <a class="user-navigation-link link" href="#">2 товара</a>
                 </li>
               </ul>
@@ -54,7 +54,6 @@
 
     <main class="main-catalog main-container global-layout">
       <header class="catalog-header">
-        <h2 class="catalog-header-title title">Сливочное мороженое</h2>
         <ul class="catalog-breadcrumbs flex-container">
           <li class="catalog-breadcrumbs-item item">
             <a class="catalog-breadcrumbs-link link" href="index.html">Главная</a>
@@ -66,10 +65,11 @@
             <a class="catalog-breadcrumbs-link link breadcrumbs-link-current">Сливочное</a>
           </li>
         </ul>
+        <h2 class="catalog-header-title title">Сливочное мороженое</h2>
       </header>
 
       <section class="catalog-filter">
-        <h2 class="visually-hidden" hidden>Фильтр каталога мороженого</h2>
+        <h2 class="visually-hidden">Фильтр каталога мороженого</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Сортировка:</legend>
@@ -138,7 +138,7 @@
       </section>
 
       <section class="catalog-products">
-        <h2 class="visually-hidden" hidden>Список каталога мороженого</h2>
+        <h2 class="visually-hidden">Список каталога мороженого</h2>
         <ul class="catalog-products-list flex-container">
 
           <li class="product-card item">
@@ -346,41 +346,44 @@
           </li>
         </ul>
 
-        <button class="catalog-products-button button button-show-more" type="button">Показать еще</button>
+        <div class="catalog-show-more flex-container">
+          <button class="catalog-products-button button button-show-more" type="button">Показать еще</button>
 
-        <ul class="catalog-pagination">
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link catalog-pagination-current">1</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link" href="#">2</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link" href="#">3</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link" href="#">4</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link link" href="#">5</a>
-          </li>
-          <li class="catalog-pagination-item item">
-            <a class="catalog-pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="catalog-pagination flex-container">
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link pagination-prev pagination-disabled">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link catalog-pagination-current">1</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link" href="#">2</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link" href="#">3</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link" href="#">4</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link link" href="#">5</a>
+            </li>
+            <li class="catalog-pagination-item item">
+              <a class="catalog-pagination-link pagination-next" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </section>
     </main>
 
     <footer class="main-footer global-layout flex-container">
       <section class="footer-social">
-        <h2 class="visually-hidden" hidden>Наши социальные сети</h2>
+        <h2 class="visually-hidden">Наши социальные сети</h2>
         <ul class="footer-social-list list flex-container">
           <li class="footer-social-item item">
             <a class="footer-social-link" href="https://vk.com/htmlacademy">
@@ -401,25 +404,25 @@
       </section>
 
       <section class="footer-about-us">
-        <h2 class="visually-hidden" hidden>О нас</h2>
+        <h2 class="visually-hidden">О нас</h2>
         <ul class="footer-about-us-list list flex-container">
           <li class="footer-about-us-item item footer-item-current">
-            <a class="footer-about-us-link link footer-selected-link" href="#">Для поставщиков</a>
+            <a class="footer-about-us-link one link footer-selected-link" href="#">Для поставщиков</a>
           </li>
           <li class="footer-about-us-item item">
-            <a class="footer-about-us-link link" href="#">О производстве</a>
+            <a class="footer-about-us-link two link" href="#">О производстве</a>
           </li>
           <li class="footer-about-us-item item">
-            <a class="footer-about-us-link link" href="#">Наши документы</a>
+            <a class="footer-about-us-link three link" href="#">Наши документы</a>
           </li>
           <li class="footer-about-us-item item">
-            <a class="footer-about-us-link link" href="#">Экологические стандарты</a>
+            <a class="footer-about-us-link four link" href="#">Экологические стандарты</a>
           </li>
         </ul>
       </section>
 
       <section class="footer-copyright">
-        <h2 class="visually-hidden" hidden>Копирайт</h2>
+        <h2 class="visually-hidden">Копирайт</h2>
         <svg class="footer-copyright-image" width="93" height="27" viewbox="0 0 93 27" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_521_0)">
             <path d="M0 10.4163V12.4995H1.98768V10.4163H0Z" fill="#2D3440"/>
