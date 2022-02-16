@@ -186,7 +186,7 @@ body {
 
 
 /* особенности */
-.features-slider-list {
+.features {
   margin-bottom: 80px;
 }
 
@@ -268,6 +268,9 @@ body {
 
 
 /* акции */
+.promo {
+  margin-bottom: 80px;
+}
 .promo-title {
   width: 443px;
   margin: 0 auto 56px auto;
@@ -276,7 +279,6 @@ body {
 
 .promo-list {
   justify-content: space-between;
-  margin-bottom: 80px;
 }
 
 .promo-item-column {
@@ -321,6 +323,10 @@ body {
 
 
 /* предложения */
+.proposals {
+  margin-bottom: 80px;
+}
+
 .proposals-title {
   width: 527px;
   margin: 0 auto;
@@ -336,7 +342,6 @@ body {
   box-sizing: border-box;
   width: 270px;
   height: 281px;
-  margin-bottom: 80px;
   padding: 133px 40px 28px 40px;
   background-color: #fcfcfc;
   border-radius: 8px;
@@ -504,6 +509,7 @@ body {
 .delivery {
   box-sizing: border-box;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 80px;
   padding: 64px;
   padding-left: 100px;
@@ -515,13 +521,6 @@ body {
 
   /* добавил временно это свойство */
   height: 534px;
-}
-
-/* не понял, как в этом элементе избавиться от верхнего маргина и при этом
-попасть в макет? */
-.delivery-container-content,
-.delivery-container-form {
-  align-self: center;
 }
 
 .delivery-title {
@@ -626,7 +625,9 @@ body {
 
 .footer-about-us-list {
   flex-wrap: wrap;
+  flex-direction: column;
   width: 356px;
+  height: 100px;
 }
 
 .footer-about-us-item {
