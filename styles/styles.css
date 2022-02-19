@@ -605,6 +605,29 @@ body {
   align-items: center;
 }
 
+.subscription-form-container {
+  margin: 0;
+  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.subscription-form-container > input {
+  /* width: 332px; */
+  flex-grow: 1;
+  padding: 14px 0 14px 16px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+.subscription-form-container > input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b9b9b9;
+}
+
 
 /* блог и подписка */
 .blog-and-subscription-container {
@@ -700,11 +723,24 @@ body {
   padding: 14px 16px;
   box-sizing: border-box;
   border-radius: 4px;
+  border: 1px solid #b9b9b9;
 }
 
 .delivery-form-grid > label {
   display: inline-block;
   margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.delivery-form-grid > input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b9b9b9;
 }
 
 input[name="delivery-form-address"] {
@@ -725,12 +761,12 @@ input[name="delivery-form-address"] {
 
 .form-date-field::after {
   top: 4px;
-  left: 41px;
+  left: 44px;
 }
 
 .form-address-field::after {
   top: 4px;
-  left: 52px;
+  left: 55px;
 }
 
 
