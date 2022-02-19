@@ -436,7 +436,7 @@ body {
 }
 
 .advantages-container {
-  padding-top: 56px;
+  padding: 56px 40px;
   background-color: #fcfcfc;
   border-radius: 16px;
 }
@@ -448,7 +448,9 @@ body {
 }
 
 .advantages-list {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
 }
 
 .advantages-item {
@@ -456,22 +458,92 @@ body {
   margin-left: 16px;
 }
 
-.advantages-item-one, .advantages-item-three {
-  margin-left: 104px;
+.advantages-item-one {
+  margin-bottom: 40px;
+  margin-left: 64px;
 }
 
-.advantages-item-two, .advantages-item-four {
+.advantages-item-two {
+  margin-bottom: 40px;
   margin-left: 94px;
 }
 
-.advantages-item-one, .advantages-item-two {
-  margin-bottom: 40px;
+.advantages-item-three {
+  margin-left: 64px;
 }
 
-.advantages-item-three, .advantages-item-four {
-  margin-bottom: 56px;
+.advantages-item-four {
+  margin-left: 94px;
 }
 
+.advantages-item-one::before,
+.advantages-item-two::before,
+.advantages-item-three::before,
+.advantages-item-four::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.advantages-item-one::before {
+  top: 8px;
+  left: 8px;
+  background-image: url("../images/icons/ice-cream.svg");
+}
+
+.advantages-item-two::before {
+  top: 8px;
+  left: 545px;
+  background-image: url("../images/icons/cow.svg");
+}
+
+.advantages-item-three::before {
+  top: 114px;
+  left: 8px;
+  background-image: url("../images/icons/leaf.svg");
+}
+
+.advantages-item-four::before {
+  top: 114px;
+  left: 545px;
+  background-image: url("../images/icons/thermometer.svg");
+}
+
+.advantages-item-one::after,
+.advantages-item-two::after,
+.advantages-item-three::after,
+.advantages-item-four::after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #2d3440;
+  border-radius: 50%;
+}
+
+.advantages-item-one::after {
+  top: 0;
+  left: 0;
+}
+
+.advantages-item-two::after {
+  top: 0;
+  left: 537px;
+}
+
+.advantages-item-three::after {
+  top: 106px;
+  left: 0;
+}
+
+.advantages-item-four::after {
+  top: 106px;
+  left: 537px;
+}
 
 /* блог */
 .blog {
