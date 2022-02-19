@@ -196,7 +196,7 @@ body {
 
 .features-slider-item {
   position: relative;
-  width: 873px;
+  width: 783px;
   padding: 21px 0 26px 70px;
 }
 
@@ -250,6 +250,42 @@ body {
 
 .slide-two::after, .slide-three::before {
   background-image: url('../images/backgrounds/background-image-ice-cream-mini-1.png');
+}
+
+.features-container::before {
+  content: "";
+  position: absolute;
+  left: 544px;
+  top: 110px;
+  width: 312px;
+  height: 312px;
+  z-index: -1;
+  background-color: #ffcbd8;
+  border-radius: 50%;
+}
+
+.features-container-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 930px;
+  top: 225px;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  background-color: rgba(255, 203, 216, 0.6);
+  border-radius: 50%;
+}
+
+.features-container-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 1070px;
+  top: 225px;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  background-color: rgba(255, 203, 216, 0.6);
+  border-radius: 50%;
 }
 
 
