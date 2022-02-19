@@ -290,16 +290,27 @@ body {
 
 
 /* социальные сети */
+.social-container {
+  margin-left: 1065px;
+}
+
 .social-list {
-/* здесь указал текущюю длину элемента, когда здесь останутся только иконки
-я этот размер актуализирую */
-  width: 230px;
-  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .social-item {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+}
+
+.social-item + .social-item {
+  margin-left: 16px;
+}
+.social-item:nth-child(4) {
+  margin-left: 0;
 }
 
 
@@ -839,8 +850,23 @@ input[name="delivery-form-address"] {
 }
 
 .footer-social-list {
-  width: 32px;
-  height: 32px;
+  flex-wrap: wrap;
+  max-width: 224px;
+}
+
+.footer-social-item {
+  width: 24px;
+  height: 24px;
+  background-color: #fcfcfc;
+  border-radius: 50%;
+}
+
+.footer-social-item + .footer-social-item {
+  margin-left: 16px;
+}
+
+.footer-about-us {
+  margin-left: 100px;
 }
 
 .footer-about-us-list {
