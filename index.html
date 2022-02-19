@@ -268,17 +268,24 @@
         </div>
         <div class="delivery-container-form">
           <form class="delivery-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-            <label>Дата
-              <input type="text" name="delivery-form-date" placeholder="01.04.2020">
-            </label>
-            <label>Телефон
-              <input type="tel" name="delivery-form-phone" placeholder="+7 800 999-00-00">
-            </label>
-            <label>Адрес
-              <input type="text" name="delivery-form-address" placeholder="ул.Большая Конюшенная, 19/8">
-            </label>
-            <button class="delivery-form-button link button button-second" type="button">Отправить</button>
+            <div class="delivery-form-grid form-text">
+              <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+            </div>
+            <div class="delivery-form-grid form-date">
+              <label class="form-date-field" for="form-date-field">Дата</label>
+              <input type="text" name="delivery-form-date" placeholder="01.04.2020" id="form-date-field">
+            </div>
+            <div class="delivery-form-grid form-phone">
+              <label for="form-phone-field">Телефон</label>
+              <input type="tel" name="delivery-form-phone" placeholder="+7 800 999-00-00" id="form-phone-field">
+            </div>
+            <div class="delivery-form-grid form-address">
+              <label class="form-address-field" for="form-address-field">Адрес</label>
+              <input type="text" name="delivery-form-address" placeholder="ул.Большая Конюшенная, 19/8" id="form-address-field">
+            </div>
+            <div class="delivery-form-grid form-button">
+              <button class="delivery-form-button link button button-second" type="button">Отправить</button>
+            </div>
           </form>
         </div>
       </section>
