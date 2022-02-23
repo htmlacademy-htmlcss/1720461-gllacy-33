@@ -240,15 +240,18 @@ body {
   background-repeat: no-repeat;
 }
 
-.slide-one::before, .slide-three::after {
+.slide-one::before,
+.slide-three::after {
   background-image: url('../images/backgrounds/background-image-ice-cream-mini-2.png');
 }
 
-.slide-one::after, .slide-two::before {
+.slide-one::after,
+.slide-two::before {
   background-image: url('../images/backgrounds/background-image-ice-cream-mini-3.png');
 }
 
-.slide-two::after, .slide-three::before {
+.slide-two::after,
+.slide-three::before {
   background-image: url('../images/backgrounds/background-image-ice-cream-mini-1.png');
 }
 
@@ -426,7 +429,8 @@ body {
   text-align: center;
 }
 
-.proposals-item-title, .proposals-price {
+.proposals-item-title,
+.proposals-price {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -809,15 +813,18 @@ input[name="delivery-form-address"] {
   width: 179px;
 }
 
-.contacts-title, .contacts-subtitle {
+.contacts-title,
+.contacts-subtitle {
   margin: 0;
 }
 
-.contacts-title, .contacts-subtitle {
+.contacts-title,
+.contacts-subtitle {
   margin-bottom: 12px;
 }
 
-.contacts-address-text, .contacts-address-tel {
+.contacts-address-text,
+.contacts-address-tel {
   margin: 0;
   font-style: normal;
   font-size: 20px;
@@ -844,7 +851,9 @@ input[name="delivery-form-address"] {
   /* height: 153px; */
 }
 
-.footer-social, .footer-about-us, .footer-copyright {
+.footer-social,
+.footer-about-us,
+.footer-copyright {
   margin-top: 48px;
   margin-bottom: 48px;
 }
@@ -872,7 +881,7 @@ input[name="delivery-form-address"] {
 .footer-about-us-list {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(auto-fill, auto);
 }
 
 .footer-about-us-item {
@@ -890,10 +899,10 @@ input[name="delivery-form-address"] {
 .footer-item-current::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
   top: 4px;
   left: 1px;
+  width: 16px;
+  height: 16px;
   margin-right: 20px;
   background-image: url("../images/icons/heart-fill.svg");
   background-repeat: no-repeat;
@@ -911,7 +920,8 @@ input[name="delivery-form-address"] {
   font-weight: 700;
 }
 
-.footer-about-us-link.one, .footer-about-us-link.three {
+.footer-about-us-link.one,
+.footer-about-us-link.three {
   width: 126px;
 }
 
@@ -927,7 +937,8 @@ input[name="delivery-form-address"] {
   margin: 0;
 }
 
-.footer-copyright-text, .footer-copyright-link {
+.footer-copyright-text,
+.footer-copyright-link {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -1011,7 +1022,8 @@ input[name="delivery-form-address"] {
   text-align: center;
 }
 
-.product-card-title, .product-card-price {
+.product-card-title,
+.product-card-price {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
