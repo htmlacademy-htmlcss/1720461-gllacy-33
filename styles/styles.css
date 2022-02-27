@@ -131,6 +131,11 @@ body {
   padding-bottom: 24px;
 }
 
+.navigation-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-navigation-logo {
   margin-right: 16px;
 }
@@ -153,17 +158,28 @@ body {
 }
 
 .main-phone-link {
-  margin-right: 8px;
+  margin-right: 18px;
   padding: 42px 0 42px 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
 }
 
+.user-navigation-item {
+  box-sizing: border-box;
+}
+/* 24/02 */
+
+.main-address-navigation {
+  flex-wrap: wrap;
+  justify-content: end;
+  /* возьмем с запасом +2 пикселя */
+  width: 421px;
+
+}
+
 .user-navigation-link {
-  min-width: 32px;
-  min-height: 32px;
-  padding: 6px 18px 6px 40px;
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -171,18 +187,22 @@ body {
   border-radius: 26px;
 }
 
-.user-navigation-item:first-child > .user-navigation-link {
-  padding: 0;
-}
+/* .user-navigation-link {
+  position: relative;
+  min-width: 32px;
+  min-height: 32px;
+  padding: 6px 18px 6px 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 26px;
+} */
 
 .user-navigation-item + .user-navigation-item > .user-navigation-link {
   margin-left: 16px;
 }
 
-.navigation-flex-container {
-  display: flex;
-  justify-content: space-between;
-}
 
 
 /* особенности */
@@ -299,21 +319,30 @@ body {
 
 .social-list {
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
 }
 
 .social-item {
-  width: 24px;
-  height: 24px;
-  background-color: #fcfcfc;
-  border-radius: 50%;
+  width: 16px;
+  height: 16px;
 }
 
 .social-item + .social-item {
   margin-left: 16px;
 }
+
 .social-item:nth-child(4) {
   margin-left: 0;
+}
+
+.social-icon {
+  fill: #fcfcfc;
+  margin: auto;
+  border: 1px solid #ffcbd8;
+  border-color: rgba(255, 203, 216, 0.6);
+  border-radius: 50%;
 }
 
 
@@ -864,14 +893,24 @@ input[name="delivery-form-address"] {
 }
 
 .footer-social-item {
-  width: 24px;
-  height: 24px;
-  background-color: #fcfcfc;
-  border-radius: 50%;
+  width: 16px;
+  height: 16px;
 }
 
 .footer-social-item + .footer-social-item {
-  margin-left: 16px;
+  margin-left: 12px;
+}
+
+.footer-social-item:nth-child(4) {
+  margin-left: 0;
+}
+
+.footer-social-icon {
+  fill: #fcfcfc;
+  margin: auto;
+  border: 1px solid #ffcbd8;
+  border-color: rgba(255, 203, 216, 0.6);
+  border-radius: 50%;
 }
 
 .footer-about-us {
