@@ -325,8 +325,8 @@ body {
 }
 
 .social-item {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .social-item + .social-item {
@@ -340,7 +340,7 @@ body {
 .social-icon {
   fill: #fcfcfc;
   margin: auto;
-  border: 1px solid #ffcbd8;
+  border: 2px solid #ffcbd8;
   border-color: rgba(255, 203, 216, 0.6);
   border-radius: 50%;
 }
@@ -431,9 +431,24 @@ body {
 }
 
 .button-add-to-cart {
+  position: relative;
+  left: 65px;
+  top: 8px;
+  display: inline-block;
   width: 32px;
   height: 32px;
   background-color: #ff2f64;
+  border-radius: 50%;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #fcfcfc;
 }
 
 .proposals-article-image {
@@ -893,12 +908,12 @@ input[name="delivery-form-address"] {
 }
 
 .footer-social-item {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-social-item + .footer-social-item {
-  margin-left: 12px;
+  margin-left: 14px;
 }
 
 .footer-social-item:nth-child(4) {
@@ -908,7 +923,7 @@ input[name="delivery-form-address"] {
 .footer-social-icon {
   fill: #fcfcfc;
   margin: auto;
-  border: 1px solid #ffcbd8;
+  border: 2px solid #ffcbd8;
   border-color: rgba(255, 203, 216, 0.6);
   border-radius: 50%;
 }
