@@ -97,13 +97,14 @@ body {
 }
 
 .button:focus {
-  box-shadow: inset 0 0 0 2px #2d3440;
+  margin: 2px;
+  border: 2px solid #2d3440;
 }
 
 .button:focus-visible {
   outline: none;
-  border: 4px solid #2d3440;
-  /* border: none; */
+  margin: 2px;
+  border: 2px solid #2d3440;
 }
 
 .button:active {
@@ -113,16 +114,46 @@ body {
 .button:disabled {
   color: #565c66;
   background-color: #b9b9b9;
-  border: 4px solid rgb(185, 185, 185, 0.3);
+  border: 4px solid rgba(185, 185, 185, 0.3);
 }
 
 .button-second {
+  padding: 12px 32px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   color: #fcfcfc;
   background-color: #ff2f64;
+  border: 4px solid rgb(252, 252, 252, 0.7);
+  border-radius: 26px;
 }
+
+.button-second:hover {
+  color: #2d3440;
+  background-color: rgb(252, 252, 252, 0.3);
+  border: 4px solid #ff2f64;
+}
+
+.button-second:focus,
+.button-second:active {
+  margin: 2px;
+  background-color: #ff2f64;
+  border: 2px solid #2d3440;
+  border-radius: 26px;
+}
+
+.button-second:focus-visible {
+  outline: none;
+  margin: 2px;
+  border: 2px solid #2d3440;
+}
+
+.button-second:disabled {
+  color: #b9b9b9;
+  background-color: #e7e7e7;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+}
+
 
 .visually-hidden {
   position: absolute;
@@ -557,12 +588,7 @@ body {
 .button-add-to-cart:hover {
   background-color: rgba(252, 252, 252, 0.4);
   box-shadow: inset 0 0 0 2px #ff2f64;
-
 }
-
-
-
-
 
 .button-add-to-cart:focus {
   box-shadow: inset 0 0 0 2px #2d3440;
@@ -571,7 +597,6 @@ body {
 .button-add-to-cart:focus-visible {
   outline: none;
   border: none;
-
 }
 
 .button-add-to-cart:active {
