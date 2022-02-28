@@ -234,32 +234,32 @@ body {
 
 .main-phone-link {
   margin-right: 18px;
-  padding: 42px 0 42px 0;
+  padding: auto 0 auto 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
 }
 
+.main-phone-link:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #2d3440;
+}
+
 .user-navigation-item {
   box-sizing: border-box;
-
 }
 
 .user-navigation-item + .user-navigation-item {
   margin-left: 32px;
 }
-/* 24/02 */
 
 .main-address-navigation {
   flex-wrap: wrap;
   justify-content: end;
-  /* возьмем с запасом +2 пикселя */
-  width: 421px;
-
 }
 
 .user-navigation-link {
-
+  position: relative;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -267,21 +267,62 @@ body {
   border-radius: 26px;
 }
 
-/* .user-navigation-link {
-  position: relative;
-  min-width: 32px;
-  min-height: 32px;
-  padding: 6px 18px 6px 16px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  background-color: rgba(252, 252, 252, 0.3);
+.user-navigation-link.search-link {
+  padding: 8px 7px 6px 7px;
+  border-radius: 50%;
+}
+
+.user-navigation-link.enter-link,
+.user-navigation-link.cart-link {
+  padding: 7px 18px 7px 0px;
+}
+
+.user-navigation-link:hover {
+  background-color: rgba(252, 252, 252, 0.5)
+}
+
+.user-navigation-link:focus {
+  box-shadow: inset 0 0 0 2px #2d3440;
   border-radius: 26px;
-} */
+}
+
+.user-navigation-link:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.user-navigation-link:active {
+  background-color: #fcfcfc;
+}
+
+
 
 .user-navigation-item + .user-navigation-item {
   margin-left: 16px;
 }
+
+.user-navigation-svg {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  fill: #2d3440;
+}
+
+.user-navigation-svg.icon2,
+.user-navigation-svg.icon3 {
+  top: 3px;
+  margin: auto 6px auto 16px;
+}
+
+.user-navigation-svg.icon1 {
+  top: 2px;
+  padding: 0;
+  margin: auto 0;
+}
+
+
+
 
 
 /* особенности */
@@ -420,20 +461,12 @@ body {
   position: relative;
 }
 
-.social-icon {
-  fill: #fcfcfc;
-  margin: auto;
-  border: 2px solid #ffcbd8;
-  border-color: rgba(255, 203, 216, 0.6);
-  border-radius: 50%;
-}
-
 .social-link::after {
   content: "";
   position: absolute;
   display: none;
-  bottom: 50%;
-  left: 25%;
+  bottom: 45%;
+  left: 19%;
   width: 17px;
   height: 17px;
   margin: auto;
@@ -446,7 +479,13 @@ body {
   display: block;
 }
 
-
+.social-icon {
+  fill: #fcfcfc;
+  margin: auto;
+  border: 2px solid #ffcbd8;
+  border-color: rgba(255, 203, 216, 0.6);
+  border-radius: 50%;
+}
 
 .social-icon:focus {
   border: 2px solid #2d3440;
@@ -567,24 +606,6 @@ body {
   z-index: 1;
 }
 
-/* .button-add-to-cart::after {
-  content: "";
-  position: absolute;
-  display: none;
-  bottom: 13%;
-  left: 14%;
-  width: 24px;
-  height: 24px;
-  margin: auto;
-  background-color: #2d3440;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.button-add-to-cart:hover::after {
-  display: block;
-} */
-
 .button-add-to-cart:hover {
   background-color: rgba(252, 252, 252, 0.4);
   box-shadow: inset 0 0 0 2px #ff2f64;
@@ -608,7 +629,6 @@ body {
   background-color: #b9b9b9;
 }
 
-
 .cart-icon {
   position: absolute;
   top: 0;
@@ -617,7 +637,6 @@ body {
   left: 0;
   margin: auto;
   padding: 8px;
-  /* border-radius: 25%; */
   fill: #fcfcfc;
 }
 
@@ -627,6 +646,8 @@ body {
   border-radius: 25%;
 }
 
+
+/* предложения */
 .proposals-article-image {
   position: absolute;
   bottom: 132px;
@@ -779,6 +800,7 @@ body {
   top: 106px;
   left: 537px;
 }
+
 
 /* блог */
 .blog {
@@ -1096,11 +1118,38 @@ input[name="delivery-form-address"] {
   margin-left: 0;
 }
 
+.footer-social-link {
+  position: relative;
+}
+
+.footer-social-link::after {
+  content: "";
+  position: absolute;
+  display: none;
+  bottom: 45%;
+  left: 19%;
+  width: 17px;
+  height: 17px;
+  margin: auto;
+  background-color: #2d3440;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.footer-social-link:hover::after {
+  display: block;
+}
+
 .footer-social-icon {
   fill: #fcfcfc;
   margin: auto;
   border: 2px solid #ffcbd8;
   border-color: rgba(255, 203, 216, 0.6);
+  border-radius: 50%;
+}
+
+.footer-social-icon:focus {
+  border: 2px solid #2d3440;
   border-radius: 50%;
 }
 
