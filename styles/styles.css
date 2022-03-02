@@ -154,6 +154,10 @@ body {
   border: 4px solid rgba(252, 252, 252, 0.4);
 }
 
+.hidden {
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -208,6 +212,7 @@ body {
 }
 
 .main-navigation-link:hover {
+  color: #2d3440;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
 }
@@ -1239,8 +1244,23 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 
 /* стили для catalog.html */
+/* навигация */
+.current-link,
+.current-link:hover,
+.current-link:focus,
+.current-link:active {
+  padding: 8px 16px;
+  color: #fcfcfc;
+  background-color: #ff4a78;
+  border-radius: 26px;
+  cursor: default;
+}
+
+
+
 /* хлебные крошки */
 .catalog-breadcrumbs {
+  position: relative;
   padding: 0;
 }
 
@@ -1255,8 +1275,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
   text-decoration: none;
 }
 
-.catalog-breadcrumbs-link:not(.catalog-breadcrumbs-item:last-child > .catalog-breadcrumbs-link) {
-  margin-right: 28px;
+.catalog-breadcrumbs-item + .catalog-breadcrumbs-item {
+  margin-left: 28px;
+}
+
+.catalog-breadcrumbs-item + .catalog-breadcrumbs-item::before {
+  content: "";
+  position: absolute;
+  margin-top: 6px;
+  margin-left: -20px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/icons/chevrons-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
