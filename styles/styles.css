@@ -456,13 +456,16 @@ body {
 
 .features-social-link {
   position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
 }
 
 .features-social-link::after {
   content: "";
   position: absolute;
   display: none;
-  bottom: 45%;
+  bottom: 10%;
   left: 19%;
   width: 17px;
   height: 17px;
@@ -494,10 +497,12 @@ body {
 }
 
 .features-slider-button {
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
   border: none;
-  padding: 0;
-  margin: 0;
 }
 
 .slider-button-left {
@@ -563,8 +568,8 @@ body {
   height: 10px;
   margin: 0;
   padding: 0;
-  background-color: #fcfcfc;
-  border: 1px solid #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid transparent;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -581,6 +586,11 @@ body {
 
 .slider-pagination-button:focus-visible {
   outline: none;
+}
+
+.pagination-button-current {
+  background-color: #fcfcfc;
+  border: 1px solid #fcfcfc;
 }
 
 /* акции */
