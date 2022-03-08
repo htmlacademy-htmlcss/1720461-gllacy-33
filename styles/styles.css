@@ -24,6 +24,7 @@
 }
 
 
+
 /* общие стили */
 html {
   height: 100%;
@@ -182,6 +183,7 @@ body {
 }
 
 
+
 /* шапка */
 .main-header {
   height: 56px;
@@ -250,6 +252,7 @@ body {
 }
 
 .user-navigation-item {
+  position: relative;
   box-sizing: border-box;
 }
 
@@ -322,6 +325,94 @@ body {
   padding: 0;
   margin: auto 0;
 }
+
+.popover {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.popover-search {
+  display: none;
+  width: 356px;
+  min-height: 96px;
+}
+
+.popover-content.search {
+  height: 100%;
+}
+
+.popover-content-input-container {
+  justify-content: center;
+  margin: 25px 16px;
+}
+
+.popover-content-input-container > input {
+  flex-grow: 1;
+  padding: 14px 0 14px 16px;
+  color: #2d3440;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+.popover-content-input-container > input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b9b9b9;
+}
+
+
+
+
+.popover-cart {
+  display: none;
+  width: 288px;
+  min-height: 156px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+
+}
+
+/* у меня никак не получается сделать кнопки закрытия, может подскажешь какие-нибудь варианты? */
+/* .popover-close-button {
+  position: absolute;
+  top: -38px;
+  right: 0;
+  width: 97px;
+  height: 31px;
+  padding-right: 21px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.popover-svg {
+  top: 3px;
+  margin: auto 6px auto 7px;
+} */
+
+.popover-content.cart {
+  height: 100%;
+  padding: 48px;
+  text-align: center;
+}
+
+.popover-title.user-nav {
+  margin: 0 auto;
+}
+
+.popover-open {
+  display: block;
+}
+
 
 
 /* особенности */
