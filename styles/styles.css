@@ -279,7 +279,7 @@ body {
   border-radius: 50%;
 }
 
-.user-navigation-link.enter-link,
+.user-navigation-link.login-link,
 .user-navigation-link.cart-link {
   padding: 7px 18px 7px 0px;
 }
@@ -347,12 +347,13 @@ body {
   height: 100%;
 }
 
-.popover-content-input-container {
+.popover-search-form-container {
   justify-content: center;
   margin: 25px 16px;
 }
 
-.popover-content-input-container > input {
+.popover-search-form-container > input,
+.popover-login-form-container > input {
   flex-grow: 1;
   padding: 14px 0 14px 16px;
   color: #2d3440;
@@ -360,7 +361,7 @@ body {
   border-radius: 4px;
 }
 
-.popover-content-input-container > input::placeholder {
+.popover-search-form-container > input::placeholder {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -369,8 +370,46 @@ body {
   color: #b9b9b9;
 }
 
+.popover-login {
+  display: none;
+  width: 420px;
+  min-height: 350px;
+}
 
+.popover-content.login {
+  margin: 48px 48px 52px 48px;
+}
 
+.popover-title {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.popover-login-form-container {
+  margin: 0;
+}
+
+.popover-login-form-container > input[type="email"] {
+  margin-bottom: 16px;
+}
+.popover-login-form-container > input[type="password"] {
+  margin-bottom: 32px;
+}
+
+.popover-login-button {
+  margin-right: 19px;
+}
+
+.popover-login-container {
+  align-items: center;
+}
+
+.popover-login-link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  border-bottom: 1px solid #2d3440;
+}
 
 .popover-cart {
   display: none;
