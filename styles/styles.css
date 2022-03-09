@@ -418,7 +418,6 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-
 }
 
 /* у меня никак не получается сделать кнопки закрытия, может подскажешь какие-нибудь варианты? */
@@ -1511,6 +1510,83 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-color: #ff4a78;
   border-radius: 26px;
   cursor: default;
+}
+
+.popover-cart-catalog {
+  display: none;
+  width: 441px;
+  min-height: 382px;
+  padding: 48px 48px 44px 48px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+
+}
+
+.popover-title-catalog {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.popover-catalog-container {
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.popover-catalog-container:last-child {
+  margin-bottom: 28px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.popover-catalog-text-container {
+  margin-left: 16px;
+}
+
+.popover-catalog-text-container > p {
+  margin: 0;
+}
+
+.popover-catalog-text-container > p:first-child {
+  margin-bottom: 4px;
+}
+
+.popover-text-counting {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b9b9b9;
+}
+
+.popover-catalog-price {
+  margin: 0;
+  margin-left: auto;
+}
+
+.popover-catalog-delete-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: 55px;
+}
+
+.popover-catalog-delete-button:hover {
+  cursor: pointer;
+
+/* Временное свойство */
+/* Как убрать отступ у кнопки? Его видно при наведении. Я заметил, что он
+у меня под каждой кнопкой (именно тег button). Я уже все перепробовал, что знал. */
+  background-color: #e7e7e7;
+}
+
+.popover-catalog-button-and-total-price-container {
+  justify-content: space-between;
+  align-items: center;
 }
 
 
