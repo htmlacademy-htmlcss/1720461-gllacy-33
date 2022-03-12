@@ -351,18 +351,38 @@
             <div class="delivery-form-grid form-text">
               <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             </div>
+
             <div class="delivery-form-grid form-date">
               <label class="form-date-field" for="form-date-field">Дата</label>
+              <span class="form-date-tooltip-container">
+                <button class="form-date-tooltip-button">
+                  <svg class="form-date-tooltip-svg" aria-hidden="true" focusable="false" width="13" height="13" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z"/>
+                  </svg>
+                </button>
+                <span class="form-date-tooltip-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</span>
+              </span>
               <input class="field" type="date" name="delivery-form-date" id="form-date-field" min="2020-01-01">
             </div>
+
             <div class="delivery-form-grid form-phone">
               <label for="form-phone-field">Телефон</label>
               <input class="field" type="tel" name="delivery-form-phone" placeholder="+7 800 999-00-00" id="form-phone-field">
             </div>
+
             <div class="delivery-form-grid form-address">
               <label class="form-address-field" for="form-address-field">Адрес</label>
+              <span class="form-address-tooltip-container">
+                <button class="form-address-tooltip-button">
+                  <svg class="form-address-tooltip-svg" aria-hidden="true" focusable="false" width="13" height="13" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00027 2.33333C4.87051 2.33333 2.33333 4.87051 2.33333 8.00027C2.33333 11.13 4.87051 13.6672 8.00027 13.6672C11.13 13.6672 13.6672 11.13 13.6672 8.00027C13.6672 4.87051 11.13 2.33333 8.00027 2.33333ZM1 8.00027C1 4.13413 4.13413 1 8.00027 1C11.8664 1 15.0005 4.13413 15.0005 8.00027C15.0005 11.8664 11.8664 15.0005 8.00027 15.0005C4.13413 15.0005 1 11.8664 1 8.00027ZM8.00006 7.33332C8.36825 7.33332 8.66672 7.6318 8.66672 7.99999V10.5334C8.66672 10.9016 8.36825 11.2001 8.00006 11.2001C7.63187 11.2001 7.33339 10.9016 7.33339 10.5334V7.99999C7.33339 7.6318 7.63187 7.33332 8.00006 7.33332ZM8.00006 4.79989C7.63187 4.79989 7.33339 5.09836 7.33339 5.46655C7.33339 5.83474 7.63187 6.13322 8.00006 6.13322H8.00672C8.37491 6.13322 8.67339 5.83474 8.67339 5.46655C8.67339 5.09836 8.37491 4.79989 8.00672 4.79989H8.00006Z"/>
+                  </svg>
+                </button>
+                <span class="form-address-tooltip-text">Введите название улицы, дома и квартиры</span>
+              </span>
               <input class="field" type="text" name="delivery-form-address" placeholder="ул.Большая Конюшенная, 19/8" id="form-address-field">
             </div>
+
             <div class="delivery-form-grid form-button">
               <button class="delivery-form-button link button-second" type="submit">Отправить</button>
             </div>
