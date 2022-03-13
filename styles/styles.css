@@ -1754,6 +1754,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .breadcrumbs-link-current {
   text-decoration: none;
+  cursor: default;
 }
 
 .catalog-breadcrumbs-item + .catalog-breadcrumbs-item {
@@ -1772,6 +1773,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-position: center;
 }
 
+.catalog-header-title {
+  margin-bottom: 35px;
+}
 
 
 /* фильтр */
@@ -1780,6 +1784,73 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 20px;
   font-weight: 400;
 }
+
+.catalog-filter-form {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 810px;
+
+  /* временное свойство, пока не переделаны карточки товаров */
+  margin-bottom: 70px;
+
+
+}
+
+
+.catalog-filter-group {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+  border: none;
+}
+
+.catalog-filter-group > legend {
+  margin-left: 16px;
+}
+
+.catalog-filter-title {
+  margin-bottom: 8px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 8px 16px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 26px;
+}
+
+.catalog-filter-item {
+  display: flex;
+  align-items: center;
+}
+
+.button-filter {
+  align-self: flex-end;
+  width: 187px;
+  min-height: 36px;
+  padding: 8px 54px;
+  margin-bottom: 7px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  outline: 2px solid #fcfcfc;
+}
+
+.button-filter:hover,
+.button-filter:active,
+.button-filter:focus {
+  border: none;
+  outline: 2px solid #fcfcfc;
+}
+
+.button-filter:focus {
+  outline: 2px solid #2d3440;
+}
+
 
 
 
