@@ -1792,10 +1792,29 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 }
 
-.catalog-filter-select-control {
+.catalog-filter-range {
+  min-height: 36px;
+  box-sizing: border-box;
   margin: 0;
   padding: 8px 16px 8px 16px;
   border: none;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 26px;
+}
+
+.catalog-filter-select-control {
+  min-height: 36px;
+  margin: 0;
+  padding: 8px 24px 8px 16px;
+  font-family: serif;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  /* по-моему, межбуквенное расстояние нужно подкорректировать */
+  letter-spacing: 0.25px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
 }
@@ -1807,6 +1826,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border: none;
 }
 
+.catalog-filter-group.range {
+  width: 200px;
+}
+
 .catalog-filter-group > legend {
   margin-left: 16px;
 }
@@ -1816,6 +1839,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .catalog-filter-list {
+  min-height: 36px;
+  box-sizing: border-box;
   margin: 0;
   padding: 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
@@ -1825,6 +1850,60 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .catalog-filter-item {
   display: flex;
   align-items: center;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.catalog-filter-range {
+  width: 196px;
+  height: 16px;
+}
+
+.catalog-filter-range-scale {
+  position: relative;
+  margin-top: 10px;
+  height: 2px;
+  margin-bottom: 16px;
+  background-color: rgba(86, 92, 102, 0.3);
+  border-radius: 2px;
+}
+
+
+
+.catalog-filter-range-bar {
+  position: relative;
+}
+
+.catalog-filter-range-toggle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #2d3440;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -7px;
+  left: 25px;
+}
+
+.toggle-max {
+  top: -7px;
+  right: 40px;
+}
+
+.catalog-filter-range-toggle::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fcfcfc;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
 
