@@ -88,24 +88,22 @@ body {
 .button {
   padding: 12px 32px;
   background-color: #fcfcfc;
-  border: 4px solid rgb(254, 175, 195, 0.6);
+  border: none;
+  outline: 4px solid rgba(252, 252, 252, 0.6);
   border-radius: 26px;
 }
 
 .button:hover {
   background-color: rgba(252, 252, 252, 0.4);
-  border: 4px solid #fcfcfc;
+  outline: 4px solid #fcfcfc;
 }
 
 .button:focus {
-  margin: 2px;
-  border: 2px solid #2d3440;
+  outline: 2px solid #2d3440;
 }
 
 .button:focus-visible {
-  outline: none;
-  margin: 2px;
-  border: 2px solid #2d3440;
+  outline: 2px solid #2d3440;
 }
 
 .button:active {
@@ -115,7 +113,7 @@ body {
 .button:disabled {
   color: #565c66;
   background-color: #b9b9b9;
-  border: 4px solid rgba(185, 185, 185, 0.3);
+  outline: 4px solid rgba(185, 185, 185, 0.3);
 }
 
 .button-second {
@@ -125,34 +123,32 @@ body {
   font-weight: 700;
   color: #fcfcfc;
   background-color: #ff2f64;
-  border: 4px solid rgb(252, 252, 252, 0.7);
+  border: none;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
   border-radius: 26px;
 }
 
 .button-second:hover {
   color: #2d3440;
-  background-color: rgb(252, 252, 252, 0.3);
-  border: 4px solid #ff2f64;
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 4px solid #ff2f64;
 }
 
 .button-second:focus,
 .button-second:active {
-  margin: 2px;
   background-color: #ff2f64;
-  border: 2px solid #2d3440;
+  outline: 2px solid #2d3440;
   border-radius: 26px;
 }
 
 .button-second:focus-visible {
-  outline: none;
-  margin: 2px;
-  border: 2px solid #2d3440;
+  outline: 2px solid #2d3440;
 }
 
 .button-second:disabled {
   color: #b9b9b9;
   background-color: #e7e7e7;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  outline: 4px solid rgba(252, 252, 252, 0.4);
 }
 
 .hidden {
@@ -1794,9 +1790,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
   /* временное свойство, пока не переделаны карточки товаров */
   margin-bottom: 70px;
 
-
 }
 
+.catalog-filter-select-control {
+  margin: 0;
+  padding: 8px 16px 8px 16px;
+  border: none;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 26px;
+}
 
 .catalog-filter-group {
   padding: 0;
@@ -1825,6 +1827,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   align-items: center;
 }
 
+
 .button-filter {
   align-self: flex-end;
   width: 187px;
@@ -1842,7 +1845,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .button-filter:hover,
 .button-filter:active,
-.button-filter:focus {
+.button-filter:focus,
+.button-filter:focus-visible {
+  margin-bottom: 7px;
   border: none;
   outline: 2px solid #fcfcfc;
 }
