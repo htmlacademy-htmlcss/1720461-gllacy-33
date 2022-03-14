@@ -180,20 +180,24 @@
             <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-list flex-container">
               <li class="catalog-filter-item item">
-                <input type="radio" name="catalog-filter-fat-content" value="fat-content-zero" id="catalog-filter-item-zero">
-                <label for="catalog-filter-item-zero">0%</label>
+                <div class="catalog-filter-radiobutton">
+                  <span></span>
+                  <span></span>
+                  <input type="radio" name="catalog-filter-fat-content" value="fat-content-zero" id="catalog-filter-item-zero">
+                  <label for="catalog-filter-item-field catalog-filter-item-zero">0%</label>
+                </div>
               </li>
               <li class="catalog-filter-item item">
                 <input type="radio" name="catalog-filter-fat-content" value="fat-content-ten" id="catalog-filter-item-ten" checked>
-                <label for="catalog-filter-item-ten">до 10%</label>
+                <label for="catalog-filter-item-field catalog-filter-item-ten">до 10%</label>
               </li>
               <li class="catalog-filter-item item">
                 <input type="radio" name="catalog-filter-fat-content" value="fat-content-up-to-30" id="catalog-filter-item-up-to-30">
-                <label for="catalog-filter-item-up-to-30">до 30%</label>
+                <label for="catalog-filter-item-field catalog-filter-item-up-to-30">до 30%</label>
               </li>
               <li class="catalog-filter-item item">
                 <input type="radio" name="catalog-filter-fat-content" value="fat-content-above-30" id="catalog-filter-item-above-30">
-                <label for="catalog-filter-item-above-30">свыше 30%</label>
+                <label for="catalog-filter-item-field catalog-filter-item-above-30">свыше 30%</label>
               </li>
             </ul>
           </fieldset>
@@ -201,10 +205,16 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители:</legend>
             <ul class="catalog-filter-list flex-container">
+
               <li class="catalog-filter-item item">
-                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-chocolate" id="catalog-filter-item-chocolate" checked>
-                <label for="catalog-filter-item-chocolate">шоколадные</label>
+                <label for="catalog-filter-item-chocolate catalog-filter-field">
+                  <input class="visually-hidde catalog-filter-input control-input" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-chocolate" id="catalog-filter-item-chocolate" checked>
+                  <span class="catalog-filter-mark control-mark"></span>
+                  <span class="catalog-filter-label control-label">шоколадные
+                  </span>
+                </label>
               </li>
+
               <li class="catalog-filter-item item">
                 <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-sugar" id="catalog-filter-item-sugar" checked>
                 <label for="catalog-filter-item-sugar">сахарные посыпки</label>
@@ -450,11 +460,14 @@
         </ul>
 
         <div class="catalog-show-more flex-container">
-          <button class="catalog-products-button button button-show-more" type="button">Показать еще</button>
+          <button class="catalog-products-button button button-show-more" type="button">Показать ещё</button>
 
           <ul class="catalog-pagination flex-container">
             <li class="catalog-pagination-item item">
-              <a class="catalog-pagination-link pagination-prev pagination-disabled">
+              <a class="catalog-pagination-link pagination-prev pagination-disabled-link">
+                <svg class="catalog-pagination-svg left pagination-disabled" width="16" height="16" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
+                </svg>
                 <span class="visually-hidden">Предыдущая страница</span>
               </a>
             </li>
@@ -475,6 +488,9 @@
             </li>
             <li class="catalog-pagination-item item">
               <a class="catalog-pagination-link pagination-next" href="#">
+                <svg class="catalog-pagination-svg right" width="16" height="16" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
+                </svg>
                 <span class="visually-hidden">Следующая страница</span>
               </a>
             </li>
