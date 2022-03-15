@@ -1817,9 +1817,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .catalog-filter-select-control {
+  min-width: 196px;
   min-height: 36px;
   margin: 0;
-  padding: 8px 24px 8px 16px;
+  padding: 8px 16px 8px 16px;
   font-family: serif;
   border: none;
   font-family: "Inter", sans-serif;
@@ -1831,6 +1832,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   /* letter-spacing: 0.25px; */
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
+  appearance: none;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
 }
 
 .catalog-filter-group {
@@ -1853,12 +1858,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .catalog-filter-list {
+  justify-content: space-between;
   min-height: 36px;
   box-sizing: border-box;
   margin: 0;
   padding: 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
+}
+.catalog-filter-list.checkbox {
+  min-width: 596px;
+}
+
+.catalog-filter-list:nth-child(2) {
+  margin-right: 5px;
 }
 
 .catalog-filter-item {
@@ -1873,6 +1886,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 
 .catalog-filter-range {
+  position: relative;
   width: 196px;
   height: 16px;
 }
@@ -1884,6 +1898,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-bottom: 16px;
   background-color: rgba(86, 92, 102, 0.3);
   border-radius: 2px;
+}
+
+.catalog-filter-range-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 90px;
+  height: 2px;
+  background-color: #2d3440;
+  border: none;
+  cursor: pointer;
+  z-index: -1;
+}
+
+
+.catalog-filter-range-scale:focus-visible {
+  outline: none;
 }
 
 .catalog-filter-range-bar {
@@ -1900,6 +1932,41 @@ input[type=date]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+.catalog-filter-range-toggle:hover {
+  background: #fcfcfc;
+}
+
+.catalog-filter-range-toggle::after {
+  position: absolute;
+  top: 37%;
+  left: 39%;
+  width: 4px;
+  height: 4px;
+  background: #fcfcfc;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  content: '';
+}
+
+.catalog-filter-range-toggle:hover::after {
+  background: #2d3440;
+}
+
+.catalog-filter-range-toggle:focus {
+  box-shadow: inset 0 0 0 1px #2d3440;
+}
+
+.catalog-filter-range-toggle:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.catalog-filter-range-toggle:active {
+  background: #2d3440;
+}
+
+
 .toggle-min {
   top: -7px;
   left: 25px;
@@ -1910,15 +1977,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   right: 40px;
 }
 
-.catalog-filter-range-toggle::before {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background: #fcfcfc;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-}
+
+
+
 
 .custom-radiobutton {
   position: absolute;
@@ -1974,10 +2035,28 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-position: center center;
   background-size: 100%;
 }
+
 .custom-checkbox:checked+label::before {
   background-image: url("../images/icons/check-on.svg");
 }
 
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  background-image: url("../images/icons/check-off-white.svg");
+}
+
+.custom-checkbox:not(:disabled):checked+label:hover::before {
+  background-image: url("../images/icons/check-on-white.svg");
+}
+
+.custom-checkbox:disabled:not(:checked)+label:hover::before {
+  background-image: url("../images/icons/check-off.svg");
+  opacity: 0.45;
+}
+
+.custom-checkbox:disabled:checked+label:hover::before {
+  background-image: url("../images/icons/check-on.svg");
+  opacity: 0.45;
+}
 
 
 
@@ -2158,7 +2237,6 @@ margin-bottom: 60px;
 .catalog-pagination-item:first-child > .catalog-pagination-link:hover {
   box-shadow: none;
 }
-
 
 .catalog-pagination-current {
   background-color: #fcfcfc;
