@@ -180,23 +180,19 @@
             <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-list flex-container">
               <li class="catalog-filter-item item">
-                <div class="catalog-filter-radiobutton">
-                  <span></span>
-                  <span></span>
-                  <input type="radio" name="catalog-filter-fat-content" value="fat-content-zero" id="catalog-filter-item-zero">
+                  <input class="custom-radiobutton" type="radio" name="catalog-filter-fat-content" value="fat-content-zero" id="catalog-filter-item-zero">
                   <label for="catalog-filter-item-field catalog-filter-item-zero">0%</label>
-                </div>
               </li>
               <li class="catalog-filter-item item">
-                <input type="radio" name="catalog-filter-fat-content" value="fat-content-ten" id="catalog-filter-item-ten" checked>
+                <input class="custom-radiobutton" type="radio" name="catalog-filter-fat-content" value="fat-content-ten" id="catalog-filter-item-ten" checked>
                 <label for="catalog-filter-item-field catalog-filter-item-ten">до 10%</label>
               </li>
               <li class="catalog-filter-item item">
-                <input type="radio" name="catalog-filter-fat-content" value="fat-content-up-to-30" id="catalog-filter-item-up-to-30">
+                <input class="custom-radiobutton" type="radio" name="catalog-filter-fat-content" value="fat-content-up-to-30" id="catalog-filter-item-up-to-30">
                 <label for="catalog-filter-item-field catalog-filter-item-up-to-30">до 30%</label>
               </li>
               <li class="catalog-filter-item item">
-                <input type="radio" name="catalog-filter-fat-content" value="fat-content-above-30" id="catalog-filter-item-above-30">
+                <input class="custom-radiobutton" type="radio" name="catalog-filter-fat-content" value="fat-content-above-30" id="catalog-filter-item-above-30">
                 <label for="catalog-filter-item-field catalog-filter-item-above-30">свыше 30%</label>
               </li>
             </ul>
@@ -205,39 +201,24 @@
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители:</legend>
             <ul class="catalog-filter-list flex-container">
-
-
               <li class="catalog-filter-item item">
-                <input type="checkbox" class="custom-checkbox" id="happy" name="catalog-filter-filler" value="yes">
-                <label for="happy">Happy</label>
+                <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-chocolate" id="catalog-filter-item-chocolate" checked>
+                <label for="catalog-filter-item-chocolate">шоколадные</label>
               </li>
-
-
-
-
               <li class="catalog-filter-item item">
-                <label for="catalog-filter-item-chocolate catalog-filter-field">
-                  <input class="visually-hidde catalog-filter-input control-input" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-chocolate" id="catalog-filter-item-chocolate" checked>
-                  <span class="catalog-filter-mark control-mark"></span>
-                  <span class="catalog-filter-label control-label">шоколадные
-                  </span>
-                </label>
-              </li>
-
-              <li class="catalog-filter-item item">
-                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-sugar" id="catalog-filter-item-sugar" checked>
+                <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-sugar" id="catalog-filter-item-sugar" checked>
                 <label for="catalog-filter-item-sugar">сахарные посыпки</label>
               </li>
               <li class="catalog-filter-item item">
-                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-fruits" id="catalog-filter-item-fruits">
+                <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-fruits" id="catalog-filter-item-fruits">
                 <label for="catalog-filter-item-fruits">фрукты</label>
               </li>
               <li class="catalog-filter-item item">
-                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-syrups" id="catalog-filter-item-syrups">
+                <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-syrups" id="catalog-filter-item-syrups">
                 <label for="catalog-filter-item-syrups">сиропы</label>
               </li>
               <li class="catalog-filter-item item">
-                <input type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-jams" id="catalog-filter-item-jams">
+                <input class="custom-checkbox" type="checkbox" name="catalog-filter-filler" value="catalog-filter-item-jams" id="catalog-filter-item-jams">
                 <label for="catalog-filter-item-jams">джемы</label>
               </li>
             </ul>

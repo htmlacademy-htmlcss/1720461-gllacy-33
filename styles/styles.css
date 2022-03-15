@@ -1803,9 +1803,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   justify-content: space-between;
   width: 810px;
 
-  /* временное свойство, пока не переделаны карточки товаров */
   margin-bottom: 70px;
-
 }
 
 .catalog-filter-range {
@@ -1830,7 +1828,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   line-height: 20px;
   font-weight: 400;
   /* по-моему, межбуквенное расстояние нужно подкорректировать */
-  letter-spacing: 0.25px;
+  /* letter-spacing: 0.25px; */
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 26px;
 }
@@ -1920,6 +1918,64 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+}
+
+.custom-radiobutton {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radiobutton + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-radiobutton + label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-image: url("../images/icons/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.custom-radiobutton:checked+label::before {
+  background-image: url("../images/icons/radio-on.svg");
+}
+
+
+
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: none;
+  margin-right: 6px;
+  background-image: url("../images/icons/check-off.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+.custom-checkbox:checked+label::before {
+  background-image: url("../images/icons/check-on.svg");
 }
 
 
