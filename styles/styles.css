@@ -877,17 +877,14 @@ body {
 }
 
 .proposals-article {
+  position: relative;
   box-sizing: border-box;
   width: 270px;
-  height: 281px;
-  padding: 133px 40px 28px 40px;
+  min-height: 281px;
+  padding: 133px 40px 24px 40px;
   background-color: #fcfcfc;
   border-radius: 8px;
   z-index: 2;
-}
-
-.proposals-link {
-  position: relative;
 }
 
 .button-add-to-cart {
@@ -946,13 +943,17 @@ body {
 
 /* предложения */
 .proposals-article-image {
-  position: absolute;
-  bottom: 132px;
-  left: 10px;
-  display: block;
+  /* margin-left: auto; */
   margin-right: auto;
-  margin-left: auto;
+  position: absolute;
+  top: -51px;
+  left: 50px;
+
+  /* display: block; */
+  /* margin-right: auto;
+  margin-left: auto; */
   border-radius: 50%;
+  text-align: center;
 }
 
 .proposals-item-title {
@@ -2009,29 +2010,29 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-size: 100%;
 }
 
-.custom-radiobutton:checked+label::before {
+.custom-radiobutton:checked + label::before {
   background-image: url("../images/icons/radio-on.svg");
 }
 
-.custom-radiobutton:not(:disabled):not(:checked)+label:hover::before {
+.custom-radiobutton:not(:disabled):not(:checked) + label:hover::before {
   background-image: url("../images/icons/radio-off-white.svg");
 }
 
-.custom-radiobutton:not(:disabled):checked+label:hover::before {
+.custom-radiobutton:not(:disabled):checked + label:hover::before {
   background-image: url("../images/icons/radio-on-white.svg");
 }
 
-.custom-radiobutton:disabled:not(:checked)+label:hover::before {
+.custom-radiobutton:disabled:not(:checked) + label:hover::before {
   background-image: url("../images/icons/radio-off.svg");
   opacity: 0.45;
 }
 
-.custom-radiobutton:disabled:checked+label:hover::before {
+.custom-radiobutton:disabled:checked + label:hover::before {
   background-image: url("../images/icons/radio-on.svg");
   opacity: 0.45;
 }
 
-.custom-radiobutton:focus+label::before {
+.custom-radiobutton:focus + label::before {
   outline: 2px solid rgba(86, 92, 102, 0.7);
   border-radius: 50%;
 }
@@ -2137,24 +2138,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .product-card-article {
+  position: relative;
   box-sizing: border-box;
   width: 270px;
+  min-height: 281px;
   padding: 133px 40px 24px 40px;
   background-color: #fcfcfc;
   border-radius: 8px;
-
-  /* без этого свойства 273px выяснить почему */
-  height: 281px;
-}
-
-.product-card-link {
-  position: relative;
 }
 
 .product-card-image {
   position: absolute;
-  bottom: 132px;
-  left: 10px;
+  top: -51px;
+  left: 50px;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -2184,6 +2180,39 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .product-card-text.br {
   width: 160px;
 }
+
+
+
+
+/*
+.product-card-article-test {
+  box-sizing: border-box;
+  width: 270px;
+  padding: 50px 40px 24px 40px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  background: linear-gradient(180deg,
+                            rgba(0,0,0,0) 16%,
+                            rgba(252,252,252,1) 16%
+                            );
+
+  min-height: 332px;
+}
+
+.product-card-image-test {
+  position: relative;
+  bottom: 0px;
+  left: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.product-card-title-test {
+margin-top: 16px;
+} */
+
 
 .catalog-show-more {
   position: relative;
