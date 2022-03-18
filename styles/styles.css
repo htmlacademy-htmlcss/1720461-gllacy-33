@@ -551,6 +551,10 @@ body {
   padding: 21px 0 26px 70px;
 }
 
+.features-container {
+  justify-content: space-between;
+}
+
 .features-title {
   padding-top: 136px;
   padding-bottom: 24px;
