@@ -33,6 +33,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-width: 1170px;
   min-height: 100%;
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -1538,6 +1539,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .footer-social-list {
   flex-wrap: wrap;
   max-width: 224px;
+  justify-content: flex-end;
 }
 
 .footer-social-item {
@@ -2096,7 +2098,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .button-filter {
   align-self: flex-end;
-  width: 187px;
+  min-width: 187px;
   min-height: 36px;
   padding: 8px 54px;
   margin-bottom: 7px;
@@ -2221,9 +2223,9 @@ margin-top: 16px;
 }
 
 .catalog-products-button {
-  position: absolute;
+  position: relative;
   top: 0;
-  left: 42%;
+  right: 23%;
   padding: 12px 36px;
   font-size: 16px;
   line-height: 20px;
