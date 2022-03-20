@@ -1296,6 +1296,10 @@ body {
   border-radius: 16px;
 }
 
+.delivery-container-content {
+margin-top: 3px;
+}
+
 .delivery-title {
   width: 356px;
   margin-bottom: 24px;
@@ -1326,7 +1330,7 @@ body {
   "address address address"
   "button button button";
   column-gap: 16px;
-  row-gap: 20px;
+  row-gap: 10px;
   box-sizing: border-box;
   width: 500px;
   min-height: 406px;
@@ -1367,6 +1371,7 @@ body {
 
 .delivery-form-grid {
 flex-wrap: wrap;
+align-items: center;
 }
 
 .delivery-form-grid > input {
@@ -1416,14 +1421,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-
-/* .form-date-tooltip-button {
-  position: absolute;
-  top: -25px;
-  left: 44px;
-  background-color: transparent;
-  border: none;
-} */
+.delivery-form-button {
+  margin-bottom: 0px;
+}
 
 .form-date,
 .form-address {
