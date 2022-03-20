@@ -90,7 +90,7 @@ body {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   padding: 12px 32px;
   background-color: #fcfcfc;
   text-align: center;
@@ -124,7 +124,7 @@ body {
 }
 
 .button-second {
-  display: block;
+  display: inline-block;
   padding: 12px 32px;
   font-size: 16px;
   line-height: 20px;
@@ -1520,7 +1520,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   box-sizing: border-box;
   width: 343px;
   padding: 40px;
-  padding-bottom: 53px;
+  padding-bottom: 40px;
   background-color: #fcfcfc;
   border-radius: 8px;
   box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
@@ -1556,10 +1556,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .working-hours {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.contact-form-link {
+  min-height: 46px;
+  box-sizing: border-box;
+  margin-bottom: 0;
 }
 
 
@@ -1576,6 +1582,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   border-top: 1px solid rgba(252, 252, 252, 0.2);
 }
 
+
 .footer-social,
 .footer-about-us,
 .footer-copyright {
@@ -1583,16 +1590,28 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-bottom: 48px;
 }
 
+.footer-social {
+  margin-top: 45px;
+}
+
+.footer-about-us {
+  margin-top: 48px;
+}
+
 .footer-social-list {
 display: grid;
 grid-template-columns: repeat(5, auto);
-column-gap: 14px;
+column-gap: 17px;
 row-gap: 8px;
 }
 
 .footer-social-item {
   width: 24px;
   height: 24px;
+}
+
+.footer-social-item:nth-child(3) {
+  margin-right: -40px;
 }
 
 .footer-social-link {
@@ -1637,6 +1656,7 @@ row-gap: 8px;
 .footer-about-us-list {
   display: grid;
   grid-template-columns: auto auto;
+  margin-right: 10px;
 }
 
 .footer-about-us-item {
@@ -1654,7 +1674,7 @@ row-gap: 8px;
 .footer-item-current::before {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: 1px;
   width: 16px;
   height: 16px;
@@ -1666,6 +1686,7 @@ row-gap: 8px;
 }
 
 .footer-about-us-link {
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -1688,7 +1709,7 @@ row-gap: 8px;
 }
 
 .footer-copyright-image {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .footer-copyright-text {
