@@ -703,7 +703,12 @@ body {
 }
 
 .features-social-item {
-  margin-left: 14px;
+  margin-left: 16px;
+}
+
+.features-social-item:nth-child(3) {
+  margin-left: 16px;
+  margin-right: -4px;
 }
 
 .features-social-link {
@@ -864,6 +869,7 @@ body {
   align-items: flex-start;
   box-sizing: border-box;
   width: 570px;
+  min-height: 268px;
   padding: 40px 0 26px 40px;
   background-color: #ff7799;
   background-repeat: no-repeat;
@@ -873,12 +879,12 @@ body {
 
 .promo-item-column.one {
   background-image: url("../images/products/cone-of-raspberry.png");
-  background-position: right 15px bottom;
+  background-position: 373px 27px;
 }
 
 .promo-item-column.two {
   background-image: url("../images/products/cone-of-marshmallows.png");
-  background-position: right bottom;
+  background-position: 331px 19px;
 }
 
 .promo-item-title {
@@ -892,7 +898,7 @@ body {
 .promo-item-text {
   width: 321px;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
 }
 
 .promo-item-link {
@@ -1012,7 +1018,7 @@ body {
 
 .proposals-item-text {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 7px;
   text-align: center;
 }
 
@@ -1048,6 +1054,9 @@ body {
   width: 995px;
   margin: 0 auto 56px auto;
   text-align: center;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
 }
 
 .advantages-list {
@@ -1155,9 +1164,11 @@ body {
 .blog-link {
   display: block;
   width: 303px;
+  margin-bottom: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  text-align: left;
 }
 
 
@@ -1197,15 +1208,17 @@ body {
 }
 
 .subscription-form-container {
+  flex-grow: 1;
   margin: 0;
   margin-right: 20px;
-  flex-grow: 1;
 }
 
 .subscription-form-container > input,
 .modal-form-login-container > input,
 .modal-form-email-container > input {
   flex-grow: 1;
+  box-sizing: border-box;
+  min-height: 48px;
   padding: 14px 0 14px 16px;
   color: #2d3440;
   border: 1px solid #b9b9b9;
@@ -1223,9 +1236,12 @@ body {
 
 .subscription-form-button {
   max-width: 250px;
+  margin-top: 2px;
+  margin-bottom: 0;
 }
 
 .field {
+  /* min-height: 48px; */
   cursor: text;
 }
 
