@@ -1241,7 +1241,7 @@ body {
 }
 
 .field {
-  /* min-height: 48px; */
+  min-height: 48px;
   cursor: text;
 }
 
@@ -1329,6 +1329,7 @@ body {
   row-gap: 20px;
   box-sizing: border-box;
   width: 500px;
+  min-height: 406px;
   margin-left: 135px;
   padding: 40px;
   padding-bottom: 38px;
@@ -1377,7 +1378,7 @@ flex-wrap: wrap;
 }
 
 .delivery-form-grid.form-date > input {
-  padding: 12px 11px 13px 11px;
+  padding: 12px 11px 12px 11px;
 }
 
 .delivery-form-grid > label {
