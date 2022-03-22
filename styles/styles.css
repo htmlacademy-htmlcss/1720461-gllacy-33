@@ -172,7 +172,7 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -218,13 +218,21 @@ body {
 }
 
 .modal-form-close-button {
+  display: inline-block;
   position: absolute;
   top: 37px;
   right: 37px;
   margin: 0;
   padding: 0;
   border: none;
+  border-radius: 50%;
   background-color: transparent;
+}
+
+.modal-form-svg {
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
 }
 
 .modal-form-svg:hover {
@@ -233,6 +241,14 @@ body {
   cursor: pointer;
   background-color: #ffafc3;
   border-radius: 50%;
+}
+
+.modal-form-svg:focus {
+  outline: 2px solid #2d3440;
+}
+
+.modal-form-svg:active {
+  fill: #2d3440;
 }
 
 .modal-form-title {
@@ -542,6 +558,7 @@ body {
   display: none;
   width: 356px;
   min-height: 96px;
+  max-height: 96px;
 }
 
 .popover-content.search {
@@ -571,6 +588,54 @@ body {
   font-weight: 400;
   color: #b9b9b9;
 }
+
+.popover-search-form-button {
+  display: inline-block;
+  position: absolute;
+  top: 42%;
+  right: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.popover-search-form-svg {
+  margin: 0;
+  padding: 0;
+  fill:#b9b9b9;
+  border-right: 50%;
+}
+
+.popover-search-form-svg:hover {
+  fill: #2d3440;
+  border-right: 50%;
+}
+
+.popover-search-form-svg:focus {
+  outline: 2px solid #2d3440;
+  border-right: 50%;
+}
+
+.popover-search-form-svg:focus-visible {
+  outline: none;
+  outline-offset: unset;
+  border: none;
+}
+
+.popover-search-form-svg:active {
+  outline: 2px solid #2d3440;
+  fill: #2d3440;
+  border-right: 50%;
+}
+
+
+
+
+
+
+
 
 .popover-login {
   display: none;
