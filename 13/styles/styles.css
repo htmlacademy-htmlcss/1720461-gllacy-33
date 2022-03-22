@@ -172,7 +172,7 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -193,9 +193,13 @@ body {
 /* модальное окно */
 .modal {
   position: relative;
+  min-width: 570px;
+  min-height: 545px;
   margin: auto;
+  margin-top: 18.1%;
   padding: 64px;
   background-color: #fcfcfc;
+  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
 }
 
 .modal-container {
@@ -218,13 +222,21 @@ body {
 }
 
 .modal-form-close-button {
+  display: inline-block;
   position: absolute;
-  top: 37px;
-  right: 37px;
+  top: 35px;
+  right: 35px;
   margin: 0;
   padding: 0;
   border: none;
+  border-radius: 50%;
   background-color: transparent;
+}
+
+.modal-form-svg {
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
 }
 
 .modal-form-svg:hover {
@@ -235,9 +247,21 @@ body {
   border-radius: 50%;
 }
 
+.modal-form-svg:focus {
+  outline: 2px solid #2d3440;
+}
+
+.modal-form-svg:active {
+  fill: #2d3440;
+}
+
+.modal-form-content {
+  margin-top: 7px;
+}
+
 .modal-form-title {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 .modal-form-login-container,
@@ -253,6 +277,7 @@ body {
 
 .modal-form-textarea-container > textarea {
   flex-grow: 1;
+  min-height: 149px;
   padding: 14px 0 14px 16px;
   color: #2d3440;
   border: 1px solid #b9b9b9;
@@ -267,6 +292,11 @@ body {
 
 .modal-submit-button-container {
   justify-content: flex-end;
+}
+
+.modal-submit-button {
+margin-top: 4px;
+margin-bottom: 0;
 }
 
 
@@ -372,22 +402,6 @@ body {
   margin-left: 32px;
 }
 
-.user-navigation-item:hover > .popover-search {
-  display: block;
-}
-
-.user-navigation-item:hover > .popover-login {
-  display: block;
-}
-
-.user-navigation-item:hover > .popover-cart {
-  display: block;
-}
-
-.user-navigation-item:hover > .popover-cart-catalog {
-  display: block;
-}
-
 .user-navigation-link {
   position: relative;
   font-size: 14px;
@@ -456,8 +470,8 @@ body {
 
 .popover {
   position: absolute;
-  top: 38px;
-  right: 0;
+  top: 40px;
+  right: -3px;
   box-sizing: border-box;
   background-color: #fcfcfc;
   box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
@@ -538,10 +552,27 @@ body {
 
 
 
+.user-navigation-item:hover > .popover-search {
+  display: block;
+}
+
+.user-navigation-item:hover > .popover-login {
+  display: block;
+}
+
+.user-navigation-item:hover > .popover-cart {
+  display: block;
+}
+
+.user-navigation-item:hover > .popover-cart-catalog {
+  display: block;
+}
+
+
 .popover-search {
   display: none;
   width: 356px;
-  min-height: 96px;
+  max-height: 96px;
 }
 
 .popover-content.search {
@@ -572,7 +603,51 @@ body {
   color: #b9b9b9;
 }
 
+.popover-search-form-button {
+  display: inline-block;
+  position: absolute;
+  top: 42%;
+  right: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.popover-search-form-svg {
+  margin: 0;
+  padding: 0;
+  fill:#b9b9b9;
+  border-right: 50%;
+}
+
+.popover-search-form-svg:hover {
+  fill: #2d3440;
+  border-right: 50%;
+}
+
+.popover-search-form-svg:focus {
+  outline: 2px solid #2d3440;
+  border-right: 50%;
+}
+
+.popover-search-form-svg:focus-visible {
+  outline: none;
+  outline-offset: unset;
+  border: none;
+}
+
+.popover-search-form-svg:active {
+  outline: 2px solid #2d3440;
+  fill: #2d3440;
+  border-right: 50%;
+}
+
+
+
 .popover-login {
+  right: 1px;
   display: none;
   width: 420px;
   min-height: 350px;
@@ -605,7 +680,8 @@ body {
 }
 
 .popover-login-button {
-  margin-right: 19px;
+  margin-right: 23px;
+  margin-bottom: 0;
 }
 
 .popover-login-container {
@@ -631,6 +707,7 @@ body {
 }
 
 .popover-cart {
+  right: 1px;
   display: none;
   width: 288px;
   min-height: 156px;
@@ -1886,10 +1963,11 @@ row-gap: 8px;
 }
 
 .popover-cart-catalog {
+  right: 1px;
   display: none;
   width: 441px;
   min-height: 382px;
-  padding: 48px 48px 44px 48px;
+  padding: 48px 48px 40px 48px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
@@ -1937,6 +2015,10 @@ row-gap: 8px;
 .popover-catalog-price {
   margin: 0;
   margin-left: auto;
+}
+
+.popover-catalog-submit-button {
+  margin-bottom: 0;
 }
 
 .popover-catalog-delete-button {
