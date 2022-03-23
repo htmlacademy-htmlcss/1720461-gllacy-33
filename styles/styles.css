@@ -89,6 +89,36 @@ body {
   font-weight: 900;
 }
 
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.yellow-bg {
+  background-color: #fcc850;
+}
+
+.blue-bg {
+  background-color: #69a9ff;
+}
+
+.rose-bg {
+  background-color: #feafc3;
+}
+
+
+
+/* кнопки */
 .button {
   display: inline-block;
   padding: 12px 32px;
@@ -161,144 +191,6 @@ body {
   outline: 4px solid rgba(252, 252, 252, 0.4);
 }
 
-.hidden {
-  display: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-}
-
-.yellow-bg {
-  background-color: #fcc850;
-}
-
-.blue-bg {
-  background-color: #69a9ff;
-}
-
-.rose-bg {
-  background-color: #feafc3;
-}
-
-
-
-/* модальное окно */
-.modal {
-  position: relative;
-  min-width: 570px;
-  min-height: 545px;
-  margin: auto;
-  margin-top: 18.1%;
-  padding: 64px;
-  background-color: #fcfcfc;
-  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
-}
-
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  z-index: 2;
-}
-
-.modal-form-global-layout {
-  position: relative;
-  width: 570px;
-  box-sizing: border-box;
-  border-radius: 8px;
-}
-
-.modal-form-close-button {
-  display: inline-block;
-  position: absolute;
-  top: 35px;
-  right: 35px;
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background-color: transparent;
-}
-
-.modal-form-svg {
-  margin: 0;
-  padding: 0;
-  border-radius: 50%;
-}
-
-.modal-form-svg:hover {
-  outline: 2px solid #ffafc3;
-  fill: #fcfcfc;
-  cursor: pointer;
-  background-color: #ffafc3;
-  border-radius: 50%;
-}
-
-.modal-form-svg:focus {
-  outline: 2px solid #2d3440;
-}
-
-.modal-form-svg:active {
-  fill: #2d3440;
-}
-
-.modal-form-content {
-  margin-top: 7px;
-}
-
-.modal-form-title {
-  margin: 0;
-  margin-bottom: 35px;
-}
-
-.modal-form-login-container,
-.modal-form-email-container {
-  margin: 0;
-  margin-bottom: 16px;
-}
-
-.modal-form-textarea-container {
-  margin: 0;
-  margin-bottom: 28px;
-}
-
-.modal-form-textarea-container > textarea {
-  flex-grow: 1;
-  min-height: 149px;
-  padding: 14px 0 14px 16px;
-  color: #2d3440;
-  border: 1px solid #b9b9b9;
-  border-radius: 4px;
-  resize: none;
-}
-
-.modal-form-textarea {
-  min-height: 159px;
-  box-sizing: border-box;
-}
-
-.modal-submit-button-container {
-  justify-content: flex-end;
-}
-
-.modal-submit-button {
-margin-top: 4px;
-margin-bottom: 0;
-}
-
 
 
 /* шапка */
@@ -313,7 +205,6 @@ margin-bottom: 0;
 }
 
 .main-navigation-logo {
-  /* отрицальные отступы нужны для pixel perfect */
   margin-top: -1px;
   margin-right: 16px;
   margin-left: -1px;
@@ -355,8 +246,6 @@ margin-bottom: 0;
   border-radius: 26px;
 }
 
-
-
 .main-navigation-item {
   max-width: 400px;
 }
@@ -391,7 +280,6 @@ margin-bottom: 0;
 .user-navigation-list > .user-navigation-item {
   min-width: 32px;
 }
-
 
 .user-navigation-item {
   position: relative;
@@ -550,8 +438,6 @@ margin-bottom: 0;
   border: none;
 }
 
-
-
 .user-navigation-item:hover > .popover-search {
   display: block;
 }
@@ -569,6 +455,8 @@ margin-bottom: 0;
 }
 
 
+
+/* поповер */
 .popover-search {
   display: none;
   width: 356px;
@@ -644,8 +532,6 @@ margin-bottom: 0;
   border-right: 50%;
 }
 
-
-
 .popover-login {
   right: 1px;
   display: none;
@@ -715,23 +601,6 @@ margin-bottom: 0;
   line-height: 30px;
   font-weight: 700;
 }
-
-/* у меня никак не получается сделать кнопки закрытия, может подскажешь какие-нибудь варианты? */
-/* .popover-close-button {
-  position: absolute;
-  top: -38px;
-  right: 0;
-  width: 97px;
-  height: 31px;
-  padding-right: 21px;
-  box-sizing: border-box;
-  border: none;
-}
-
-.popover-svg {
-  top: 3px;
-  margin: auto 6px auto 7px;
-} */
 
 .popover-content.cart {
   height: 100%;
@@ -879,11 +748,9 @@ margin-bottom: 0;
   justify-content: flex-end;
 }
 
-
 .features-social-list {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  /* column-gap: 14px; */
   row-gap: 8px;
 }
 
@@ -1051,6 +918,8 @@ margin-bottom: 0;
   border: 1px solid #fcfcfc;
 }
 
+
+
 /* акции */
 .promo {
   margin-bottom: 80px;
@@ -1128,7 +997,10 @@ margin-bottom: 0;
 }
 
 .proposals-list {
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
+  row-gap: 81px;
 }
 
 .proposals-article {
@@ -1205,10 +1077,6 @@ margin-bottom: 0;
   position: absolute;
   top: -51px;
   left: 50px;
-
-  /* display: block; */
-  /* margin-right: auto;
-  margin-left: auto; */
   border-radius: 50%;
   text-align: center;
 }
@@ -1339,7 +1207,6 @@ margin-bottom: 0;
   top: 0;
   left: -64px;
 }
-
 
 
 
@@ -1656,6 +1523,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .form-date-tooltip-svg,
 .form-address-tooltip-svg {
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -1691,7 +1559,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .form-date-tooltip-text {
   top: -39px;
-  left: 70px;
+  left: 30px;
 }
 
 .form-date-tooltip-button:hover + .form-date-tooltip-text,
@@ -1703,7 +1571,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .form-address-tooltip-button:focus + .form-address-tooltip-text {
   display: block;
 }
-
 
 
 
@@ -1773,6 +1640,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 
+
 /* подвал */
 .main-footer {
   position: relative;
@@ -1785,7 +1653,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 1168px;
   border-top: 1px solid rgba(252, 252, 252, 0.2);
 }
-
 
 .footer-social,
 .footer-about-us,
@@ -1816,10 +1683,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .footer-social-list {
-display: grid;
-grid-template-columns: repeat(5, auto);
-column-gap: 17px;
-row-gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 17px;
+  row-gap: 8px;
 }
 
 .footer-social-item {
@@ -1949,6 +1816,119 @@ row-gap: 8px;
 
 
 
+/* модальное окно */
+.modal {
+  position: relative;
+  min-width: 570px;
+  min-height: 545px;
+  margin: auto;
+  margin-top: 18.1%;
+  padding: 64px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.modal-form-global-layout {
+  position: relative;
+  width: 570px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.modal-form-close-button {
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.modal-form-svg {
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.modal-form-svg:hover {
+  outline: 2px solid #ffafc3;
+  fill: #fcfcfc;
+  cursor: pointer;
+  background-color: #ffafc3;
+  border-radius: 50%;
+}
+
+.modal-form-svg:focus {
+  outline: 2px solid #2d3440;
+}
+
+.modal-form-svg:active {
+  fill: #2d3440;
+}
+
+.modal-form-content {
+  margin-top: 7px;
+}
+
+.modal-form-title {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.modal-form-login-container,
+.modal-form-email-container {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.modal-form-textarea-container {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.modal-form-textarea-container > textarea {
+  flex-grow: 1;
+  min-height: 149px;
+  padding: 14px 0 14px 16px;
+  color: #2d3440;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  resize: none;
+}
+
+.modal-form-textarea {
+  min-height: 159px;
+  box-sizing: border-box;
+}
+
+.modal-submit-button-container {
+  justify-content: flex-end;
+}
+
+.modal-submit-button {
+margin-top: 4px;
+margin-bottom: 0;
+}
+
+
+
+
+
 /* стили для catalog.html */
 /* навигация */
 .current-link,
@@ -1962,6 +1942,9 @@ row-gap: 8px;
   cursor: default;
 }
 
+
+
+/* поповер */
 .popover-cart-catalog {
   right: 1px;
   display: none;
@@ -2031,11 +2014,10 @@ row-gap: 8px;
 
 .popover-catalog-delete-button:hover {
   cursor: pointer;
+}
 
-/* Временное свойство */
-/* Как убрать отступ у кнопки? Его видно при наведении. Я заметил, что он
-у меня под каждой кнопкой (именно тег button). Я уже все перепробовал, что знал. */
-  background-color: #e7e7e7;
+.popover-catalog-svg {
+display: block;
 }
 
 .popover-catalog-button-and-total-price-container {
@@ -2070,7 +2052,6 @@ row-gap: 8px;
   cursor: default;
 }
 
-
 .catalog-breadcrumbs-item + .catalog-breadcrumbs-item {
   margin-left: 28px;
 }
@@ -2090,6 +2071,7 @@ row-gap: 8px;
 .catalog-header-title {
   margin-bottom: 39px;
 }
+
 
 
 /* фильтр */
@@ -2148,7 +2130,6 @@ row-gap: 8px;
 .catalog-filter-select-control:active {
   background-color: rgba(252, 252, 252, 0.65);
 }
-
 
 .catalog-filter-group {
   padding: 0;
@@ -2220,8 +2201,6 @@ row-gap: 8px;
   margin-left: 0px;
 }
 
-
-
 .catalog-filter-range {
   position: relative;
   width: 196px;
@@ -2250,7 +2229,6 @@ row-gap: 8px;
   z-index: -1;
 }
 
-
 .catalog-filter-range-scale:focus-visible {
   outline: none;
 }
@@ -2273,6 +2251,18 @@ row-gap: 8px;
   background: #fcfcfc;
 }
 
+.catalog-filter-range-toggle:focus {
+  outline: 2px solid #2d3440
+}
+
+.catalog-filter-range-toggle:focus-visible {
+  border: none;
+}
+
+.catalog-filter-range-toggle:active {
+  background: #2d3440;
+}
+
 .catalog-filter-range-toggle::after {
   position: absolute;
   top: 37%;
@@ -2290,20 +2280,6 @@ row-gap: 8px;
   background: #2d3440;
 }
 
-.catalog-filter-range-toggle:focus {
-  box-shadow: inset 0 0 0 1px #2d3440;
-}
-
-.catalog-filter-range-toggle:focus-visible {
-  outline: none;
-  border: none;
-}
-
-.catalog-filter-range-toggle:active {
-  background: #2d3440;
-}
-
-
 .toggle-min {
   top: -8px;
   left: 27px;
@@ -2313,10 +2289,6 @@ row-gap: 8px;
   top: -8px;
   right: 48px;
 }
-
-
-
-
 
 .custom-radiobutton {
   position: absolute;
@@ -2370,7 +2342,6 @@ row-gap: 8px;
   border-radius: 50%;
 }
 
-
 .custom-checkbox {
   position: absolute;
   z-index: -1;
@@ -2382,6 +2353,7 @@ row-gap: 8px;
   align-items: center;
   user-select: none;
 }
+
 .custom-checkbox + label::before {
   content: '';
   display: inline-block;
@@ -2422,11 +2394,6 @@ row-gap: 8px;
   border-radius: 3px;
 }
 
-
-
-
-
-
 .button-filter {
   align-self: center;
   min-width: 187px;
@@ -2456,7 +2423,6 @@ row-gap: 8px;
 .button-filter:focus {
   outline: 2px solid #2d3440;
 }
-
 
 
 
@@ -2519,8 +2485,6 @@ row-gap: 8px;
   width: 160px;
 }
 
-
-
 .catalog-show-more {
   position: relative;
   justify-content: flex-end;
@@ -2549,6 +2513,9 @@ row-gap: 8px;
 }
 
 .catalog-pagination-item:last-child {
+  position: relative;
+  top: 0;
+  right: -7px;
   margin-right: 0;
   margin-left: 1px;
 }
@@ -2576,6 +2543,7 @@ row-gap: 8px;
 
 .catalog-pagination-link {
   display: block;
+  margin: 0;
   padding: 2px 8px;
   font-size: 16px;
   line-height: 20px;
@@ -2603,19 +2571,17 @@ row-gap: 8px;
   box-shadow: inset 0 0 0 1px #2d3440;
 }
 
-.catalog-pagination-item:first-child > .catalog-pagination-link {
+.catalog-pagination-link.pagination-prev {
   padding-right: 16px;
   padding-left: 0px;
   background-color: transparent;
 }
 
-.catalog-pagination-item:first-child > .catalog-pagination-link:hover {
+.catalog-pagination-link.pagination-prev:hover {
   box-shadow: none;
 }
 
-.catalog-pagination-item:last-child > .catalog-pagination-link {
-  padding-right: 0px;
-  padding-left: 16px;
+.catalog-pagination-link.pagination-next {
   background-color: transparent;
 }
 
